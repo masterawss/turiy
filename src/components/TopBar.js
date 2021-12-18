@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import LoginModal from './LoginModal';
 
 const pages = ['Home', 'About', 'Features', 'Pricing', 'Gallery', 'Team'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -15,6 +16,7 @@ const TopBar = () => {
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
         </Nav>
+        <LoginModal></LoginModal>
       </Container>
     </Navbar>
   );
