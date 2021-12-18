@@ -10,7 +10,7 @@ function CardFeatureInfo({feature}){
         <>
             <Card  style={{ backgroundColor: grey[50], boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.1)', shadowColor:grey[50], borderRadius: '20px' }} >
                 <Card.Body>
-                    <div sx={{ bgcolor: feature.color, width: 80, height: 80, borderRadius: '25px' }} variant="rounded">
+                    <div className="d-flex align-items-center justify-content-center text-white mb-3" style={{ backgroundColor: feature.color, width: 80, height: 80, borderRadius: '25px' }}>
                         {feature.icon}
                     </div>
                     <h5>
