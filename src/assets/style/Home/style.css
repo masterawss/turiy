@@ -1,0 +1,10 @@
+.scroll-x {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.scroll-x div {
+    display: inline-block;
+}

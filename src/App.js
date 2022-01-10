@@ -1,19 +1,17 @@
 // import logo from './logo.svg';
-import './App.css';
-import CallToAction from './components/landing_page/CallToAction';
-import Hero from './components/landing_page/Hero.js'
-import FeaturesSection from './components/landing_page/FeaturesSection';
-import TopBar from './components/TopBar';
+import * as React from "react";
+import MainLayout from "./layouts/MainLayout";
+import LandingPage from "./pages/LandingPage/Index";
+import Home from "./pages/Home/Index";
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <>
-      <TopBar/>
-      <Hero/>
-      <FeaturesSection/>
-      <div style={{marginTop: '50px'}}>
-        <CallToAction/>
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<MainLayout/>}>
+        <Route path="" element={<LandingPage/>} />
+        <Route path="home" element={<Home/>} />
+      </Route>
+    </Routes>
   );
 }
 
