@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import * as React from "react";
 import MainLayout from "./layouts/MainLayout";
 import LandingPage from "./pages/LandingPage/Index";
