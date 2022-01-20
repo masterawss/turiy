@@ -1,18 +1,34 @@
-import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import React from "react";
+import images from "../../assets/style/images";
+import { Card } from "react-bootstrap";
 
 export const InfoCard = () => {
   return (
-    <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="holder.js/100px180" />
-    <Card.Body>
-      <Card.Title>Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk of
-        the card's content.
-      </Card.Text>
-      <Button variant="primary">Go somewhere</Button>
-    </Card.Body>
-  </Card>
-    );
+    <>
+      <Card border="light" style={{ width: "18rem" }}>
+        <Card.Body>
+          <Card.Title>MACHU PICHU</Card.Title>
+          <Card.Img variant="top" src={images.machuPichuImg} />
+          <Card.Text>
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s,
+          </Card.Text>
+
+          <Card.Title>Información a tener en cuenta</Card.Title>
+
+          <Card.Text>
+            is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's
+          </Card.Text>
+
+          <Card.Title>Otra Información</Card.Title>
+
+          <Card.Text>
+            is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </>
+  );
 };
