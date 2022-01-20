@@ -17,6 +17,11 @@ const TopBar = () => {
         </Navbar.Brand>
         <Nav className="me-auto">
           <Link className="nav-link" to="/home"> Home</Link>
+          <Link className="nav-link" to="/"> About</Link>
+          <Link className="nav-link" to="/"> Features</Link>
+          <Link className="nav-link" to="/"> Pricing</Link>
+          <Link className="nav-link" to="/"> Gallery</Link>
+          <Link className="nav-link" to="/"> Team</Link>
           <Link className="nav-link" to="/place"> Place </Link>
 
         </Nav>
