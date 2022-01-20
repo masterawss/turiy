@@ -68,20 +68,20 @@ function FormCheckout() {
 						<h4>Informacion de Usuario</h4>
 					</div>
 					<div class="field full">
-						<label for="name">Full Name</label>
+						<label for="name">Nombre</label>
 						<input id="name" type="text" placeholder="Full Name"></input>
 					</div>
 					<div class="field full">
-						<label for="address">Billing Address</label>
+						<label for="address">Direccion</label>
 						<input id="address" type="text" placeholder="Billing Address"></input>
 					</div>
 					<div class="flex justify-space-between">
 						<div class="field half">
-							<label for="city">City</label>
+							<label for="city">Ciudad</label>
 							<input id="city" type="text" placeholder="City"></input>
 						</div>
 						<div class="field half">
-							<label for="state">State</label>
+							<label for="state">Estado</label>
 							<input id="state" type="text" placeholder="State"></input>
 						</div>
 					</div>
@@ -122,11 +122,11 @@ function FormCheckout() {
 		</div>
 		<div class="card-actions flex justify-space-between">
 			<div class="flex-start">
-				<button class="button button-secondary">Return to Store</button>
+				<button class="button button-secondary">Retornar a pantalla principal</button>
 			</div>
 			<div class="flex-end">
-				<button class="button button-link">Back to Shipping</button>
-				<button class="button button-primary">Proceed</button>
+				<button class="button button-link">Retornar</button>
+				<button class="button button-primary">Pagar Suscripcion</button>
 			</div>
 		</div>
 	</div>
