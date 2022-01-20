@@ -20,7 +20,7 @@ const TopBar = () => {
           <Link className="nav-link" to="/place"> Place </Link>
 
         </Nav>
-        <LoginModal></LoginModal>
+        <LoginModal/>
       </Container>
     </Navbar>
   );
