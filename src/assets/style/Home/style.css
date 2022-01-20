@@ -8,3 +8,23 @@
 .scroll-x div {
     display: inline-block;
 }
+
+.img-publication{
+    margin:5px;
+    border-radius: 5px;
+}
+.details-Card{
+    box-shadow: 10px 11px 9px -8px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.nav-TopBar{
+    justify-content: center;
+}
+
+.img-mapShowPlace{
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20PX;
+}

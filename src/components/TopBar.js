@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import LoginModal from "./LoginModal";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
+import "../../src/assets/style/Home/style.css"
 const pages = ["Home", "About", "Features", "Pricing", "Gallery", "Team"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -15,7 +16,8 @@ const TopBar = () => {
             <img src={logo} alt="asdasd" />
           </Link>
         </Navbar.Brand>
-        <Nav className="me-auto">
+
+        <Nav className="me-auto nav-TopBar">
           <Link className="nav-link" to="/home"> Home</Link>
           <Link className="nav-link" to="/"> About</Link>
           <Link className="nav-link" to="/"> Features</Link>

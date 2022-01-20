@@ -8,7 +8,7 @@ export const PlaceNav = () => {
       <Container>
         <Nav className="me-auto">
           <Link className="nav-link" to="">
-            Publicaciones
+           <strong>Publicaciones</strong> 
           </Link>
           <Link className="nav-link" to="">
             Reseñas
