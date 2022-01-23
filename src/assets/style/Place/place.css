@@ -1,0 +1,21 @@
+.user-img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-right: .5rem;
+}
+
+.img-guide {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: .5rem;
+}
+
+.user-name, .guide-name {
+    margin: 0;
+}
+
+.rate-review-icon {
+    color: #d4d4d4;
+}

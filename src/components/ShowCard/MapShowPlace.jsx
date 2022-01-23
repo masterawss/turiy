@@ -10,7 +10,7 @@ export const MapShowPlace = () => {
         <Card.Body>
           <Card.Img className="img-mapShowPlace" variant="top" src={images.VisitMap} />
 
-          <Card.Title>GUIAS DISPONIBLES</Card.Title>
+          
         </Card.Body>
       </Card>
     </>
