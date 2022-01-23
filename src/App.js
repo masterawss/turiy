@@ -3,7 +3,8 @@ import * as React from "react";
 import MainLayout from "./layouts/MainLayout";
 import LandingPage from "./pages/LandingPage/Index";
 import Home from "./pages/Home/Index";
-import Visitados from "./pages/Profile/Show/Visitados";
+import Visited from "./pages/Profile/Show/Visited";
+import Saved from "./pages/Profile/Show/Saved";
 import Review from "./pages/Place/Show/Review";
 import { Route, Routes } from "react-router-dom";
 import { Place } from "./pages/ShowPlace/Place";
@@ -15,7 +16,8 @@ function App() {
         <Route path="" element={<LandingPage/>} />
         <Route path="home" element={<Home/>} />
         <Route path="place" element={<Place/>} />
-        <Route path="/profile/show/visitados" element={<Visitados/>} />
+        <Route path="/profile/show/visited" element={<Visited/>} />
+        <Route path="/profile/show/saved" element={<Saved/>} />
         <Route path="/place/show/review" element={<Review/>} />
       </Route>
     </Routes>
