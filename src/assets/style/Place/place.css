@@ -36,5 +36,26 @@
     width: 150px;
     height: auto;
     border-radius: .5rem;
+    margin: 5px;
 }
 
+.style-title{
+    background-color: #F0C83A;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.img1-collageguide{
+    width: 250px;
+    height: 175px;
+    padding: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.img2-collageguide{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+}

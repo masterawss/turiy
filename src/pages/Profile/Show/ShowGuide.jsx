@@ -2,21 +2,21 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { PlaceNav } from "../../../components/PlaceNav";
 import PlaceSavedCard from "../../../components/PlaceSavedCard";
-import { InfoCard } from "../../../components/ShowCard/InfoCard";
+import { CollageGuide } from "../../../components/ShowCard/CollageGuide";
 
 export const ShowGuide = () => {
   return (
     <Container>
       <Row>
         <Col>
-          <InfoCard />
+         <CollageGuide/>
         </Col>
 
         <Col xs={9}>
           <PlaceNav />
-          
+
           <Row>
-            <Col>
+            <Col >
             <PlaceSavedCard />
             </Col>
            

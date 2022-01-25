@@ -19,14 +19,12 @@ export const Place = () => {
 
                     <PublicationCard />
                     <PublicationCard />
-                    <PublicationCard />
                 </Col>
 
                 <Col>
                     <MapShowPlace />
                     <section>
                         <h5>GUIAS DISPONIBLES</h5>
-                        <AvaibleGuide />
                         <AvaibleGuide />
                     </section>
                 </Col>
