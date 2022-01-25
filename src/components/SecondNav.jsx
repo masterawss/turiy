@@ -1,23 +1,28 @@
 import * as React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Nav, NavLink } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-const pages = ['Home', 'About', 'Features', 'Pricing', 'Gallery', 'Team'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+var link1 ="";
+var link2 ="";
 
 
-const SecondNav = () => {
+const SecondNav = (props) => {
   
+  if(props.link1 === "Lugares visitados"){
+    link1="/profile/show/visited";
+  } else if (props.link1 === "Publicaciones"){
+    link1="";
+  }
+  if(props.link2 === "Guardados"){
+    link2="/profile/show/saved";
+  } else if (props.link2 === "Reseña"){
+    link2="/place/show/review";
+  }
+
   return (
-    <Navbar bg="light" variant="light">
-      <Container>
-        <Nav className="me-auto">          
-          <Nav.Link>
-            <Link to="/profile/show/visitados">Lugares visitados</Link>
-          </Nav.Link>
-          <Nav.Link href="#features">Guardados</Nav.Link>
-        </Nav>
-      </Container>
-    </Navbar>
+    <Nav className="me-auto">    
+      <Link to={link1} className="nav-link">{props.link1}</Link>  
+      <Link to={link2} className="nav-link">{props.link2}</Link> 
+    </Nav>
   );
 };
 export default SecondNav;

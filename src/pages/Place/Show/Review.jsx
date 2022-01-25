@@ -16,7 +16,7 @@ export default function Review(){
                         <InfoCard/>
                     </Col>
                     <Col sm={6} lg={6}>
-                        <SecondNav/>
+                        <SecondNav link1="Publicaciones" link2="Reseña"/>
                         <ReviewCard/>
                         <ReviewCard/>
                     </Col>

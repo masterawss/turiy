@@ -14,7 +14,7 @@ export default function Review(){
                         <User></User>
                     </Col>
                     <Col md={9}>
-                        <SecondNav/>
+                        <SecondNav link1="Lugares visitados" link2="Guardados"/>
                         <div className="nkn-flex t-flex-wrap">
                             <PlaceSavedCard></PlaceSavedCard>
                             <PlaceSavedCard></PlaceSavedCard>

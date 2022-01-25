@@ -14,7 +14,7 @@ export default function Visitados(){
                     <User></User>
                 </Col>
                 <Col md={9}>
-                    <SecondNav/>
+                    <SecondNav link1="Lugares visitados" link2="Guardados"/>
                     <PublicationCard></PublicationCard>            
                     <PublicationCard></PublicationCard>  
                 </Col>
