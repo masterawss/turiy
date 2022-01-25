@@ -7,3 +7,6 @@ body {
 .outline-none:focus{
   outline: none;
 }
+.card{
+  border: none;
+}

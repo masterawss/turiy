@@ -1,0 +1,40 @@
+.user-img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-right: .5rem;
+}
+
+.img-guide {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-right: .5rem;
+}
+
+.user-name, .guide-name {
+    margin: 0;
+}
+
+.rate-review-icon {
+    color: #d4d4d4;
+}
+.fle-row {
+    flex-direction: row;
+}
+.t-flex-wrap {
+    flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+    .t-flex-wrap {
+        flex-wrap: nowrap;
+    }
+}
+
+.img-place {
+    width: 150px;
+    height: auto;
+    border-radius: .5rem;
+}
+
