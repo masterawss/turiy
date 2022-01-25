@@ -24,8 +24,8 @@ export default function Review(){
                         <MapShowPlace></MapShowPlace>
                         <section>
                             <h5>GUIAS DISPONIBLES</h5>
-                            <AvaibleGuide></AvaibleGuide>
-                            <AvaibleGuide></AvaibleGuide>
+                            <AvaibleGuide name="Maritza"></AvaibleGuide>
+                            <AvaibleGuide name="Imasumac"></AvaibleGuide>
                         </section>
                         
                     </Col>

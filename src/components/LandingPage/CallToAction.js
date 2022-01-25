@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import banner1 from "../../assets/img/banner1.png";
+import { Link } from 'react-router-dom';
 function CallToAction() {
     return (
         <>
@@ -8,10 +9,9 @@ function CallToAction() {
                 <h3>
                     <strong>Explora el mundo ahora</strong>
                 </h3>
+                
                 <Button className="px-4" >
-                    <div style={{ fontWeight: 'bold', fontSize: 23, px: 4}}>
-                        Ingresar
-                    </div>
+                    <Link to="place" style={{ fontWeight: 'bold', fontSize: 23, px: 4, color: '#fff'}}>Ingresar</Link>
                 </Button>
             </div>
         </>
