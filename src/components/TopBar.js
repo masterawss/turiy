@@ -16,13 +16,6 @@ const TopBar = () => {
             <img src={logo} alt="asdasd" />
           </Link>
         </Navbar.Brand>
-<<<<<<< HEAD
-        <Nav className="me-auto">
-          
-          <Link to="/home">Home</Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-=======
 
         <Nav className="me-auto nav-TopBar">
           <Link className="nav-link" to="/home"> Home</Link>
@@ -33,7 +26,6 @@ const TopBar = () => {
           <Link className="nav-link" to="/"> Team</Link>
           <Link className="nav-link" to="/place"> Place </Link>
 
->>>>>>> origin/maday
         </Nav>
         <LoginModal/>
       </Container>
