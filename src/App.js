@@ -8,6 +8,7 @@ import Saved from "./pages/Profile/Show/Saved";
 import Review from "./pages/Place/Show/Review";
 import { Route, Routes } from "react-router-dom";
 import { Place } from "./pages/Place/Place";
+import { ShowGuide } from "./pages/Guide/ShowGuide";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/profile/show/visited" element={<Visited/>} />
         <Route path="/profile/show/saved" element={<Saved/>} />
         <Route path="/place/show/review" element={<Review/>} />
+        <Route path="/profile/show/guia" element={<ShowGuide/>} />
       </Route>
     </Routes>
   );
