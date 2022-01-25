@@ -8,7 +8,7 @@ import Saved from "./pages/Profile/Show/Saved";
 import Review from "./pages/Place/Show/Review";
 import { Route, Routes } from "react-router-dom";
 import { Place } from "./pages/Place/Place";
-import { ShowGuide } from "./pages/Guide/ShowGuide";
+import { ShowGuide } from "./pages/Profile/Show/ShowGuide";
 
 
 function App() {
