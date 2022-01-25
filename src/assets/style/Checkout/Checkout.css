@@ -33,7 +33,7 @@
   .flex.justify-space-between {
     justify-content: space-between;
   }
-  .card {
+  .card-check {
     padding: 50px;
     margin: 50px auto;
     max-width: 850px;

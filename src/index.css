@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* @font-face {
+  font-family: Nunito;
+  src: url("../fonts/argentum-sans/ArgentumSans-Light.ttf");
+} */
+
+*{
+  margin: 0px;
+  font-family: Nunito;
+}
+
+.btn{
+  border-radius: 20px;
+}
+.btn-primary{
+  background-color: #3300FF;
+  
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -8,5 +26,5 @@ body {
   outline: none;
 }
 .card{
-  border: none;
+  border: 0px;
 }
