@@ -13,12 +13,14 @@ function Hero() {
                         <h2 style={{color: green[700]}} >
                             <strong>Vive tu aventura</strong>
                         </h2>
-                        <h1>
-                            <strong>
-                                Desbloquea los lugares de la 
-                                <strong style={{ color: lightGreen[500]}}>&nbsp;vida real </strong>
-                            </strong>
-                        </h1>
+                        <div style={{fontStyle: 'normal',
+                            fontWeight: 900,
+                            fontSize: '48px',
+                            lineHeight: '65px'}}>
+                            Desbloquea los lugares de la 
+                            <strong style={{ color: lightGreen[500]}}>&nbsp;vida real </strong>
+                        </div>
+
                         <h5 className="py-4" style={{color: grey[500]}}>
                             Anímate a probar este juego de 
                             <span style={{ color: amber[500]}}> mundo abierto </span>

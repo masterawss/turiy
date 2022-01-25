@@ -3,7 +3,7 @@ import banner1 from "../../assets/img/banner1.png";
 function CallToAction() {
     return (
         <>
-            <div style={{ backgroundImage: `url(${banner1})`, textAlign: 'center',fontWeight: 'bold', color: 'white', paddingTop: '100px', paddingBottom: '100px' }}>
+            <div style={{ backgroundImage: `url(${banner1})`, backgroundSize: 'cover', textAlign: 'center',fontWeight: 'bold', color: 'white', paddingTop: '100px', paddingBottom: '100px' }}>
                 {/* <img src={banner1}></img> */}
                 <h3>
                     <strong>Explora el mundo ahora</strong>
