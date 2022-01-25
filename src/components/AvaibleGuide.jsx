@@ -1,5 +1,4 @@
 import * as React from "react";
-import Card from 'react-bootstrap/Card';
 import user from '../assets/img/user.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
