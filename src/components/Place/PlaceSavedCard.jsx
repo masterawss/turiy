@@ -1,7 +1,7 @@
 import * as React from "react";
 import Card from 'react-bootstrap/Card';
-import "../assets/style/Place/place.css";
-import sanAndres from "../assets/img/sanAndres.jpg"
+import "../../assets/style/Place/place.css";
+import sanAndres from "../../assets/img/sanAndres.jpg"
 
 const PlaceSavedCard = () => {
   return (

@@ -15,7 +15,7 @@ const SecondNav = (props) => {
   if(props.link2 === "Guardados"){
     link2="/profile/show/saved";
   } else if (props.link2 === "Reseña"){
-    link2="/place/show/review";
+    link2="/place/review";
   }
 
   return (

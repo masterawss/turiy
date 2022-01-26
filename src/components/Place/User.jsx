@@ -1,5 +1,5 @@
 import * as React from "react";
-import user from '../assets/img/user.jpeg';
+import user from '../../assets/img/user.jpeg';
 const User = () => {
   return (
     <div className="nkn-vertical-align">

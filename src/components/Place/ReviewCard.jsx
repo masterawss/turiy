@@ -1,6 +1,6 @@
 import * as React from "react";
-import "../assets/style/Place/place.css";
-import user from '../assets/img/user.jpeg';
+import "../../assets/style/Place/place.css";
+import user from '../../assets/img/user.jpeg';
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';

@@ -1,9 +1,9 @@
 // import './App.css';
-import SecondNav from "../../../components/SecondNav";
-import { InfoCard } from "../../../components/ShowCard/InfoCard";
-import { MapShowPlace } from "../../../components/ShowCard/MapShowPlace";
-import ReviewCard from "../../../components/ReviewCard";
-import AvaibleGuide from "../../../components/AvaibleGuide";
+import SecondNav from "../../components/SecondNav";
+import { InfoCard } from "../../components/Place/InfoCard";
+import { MapShowPlace } from "../../components/Place/MapShowPlace";
+import ReviewCard from "../../components/Place/ReviewCard";
+import AvaibleGuide from "../../components/AvaibleGuide";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

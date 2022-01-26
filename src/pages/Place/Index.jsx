@@ -1,12 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-// import { PlaceNav } from "../../components/PlaceNav";
 import SecondNav from '../../components/SecondNav';
-import { InfoCard } from "../../components/ShowCard/InfoCard";
-import { MapShowPlace } from "../../components/ShowCard/MapShowPlace";
-import { PublicationCard } from "../../components/ShowCard/PublicationCard";
+import { InfoCard } from "../../components/Place/InfoCard";
+import { MapShowPlace } from "../../components/Place/MapShowPlace";
+import { PublicationCard } from "../../components/Place/PublicationCard";
 
-export const Place = () => {
+export default function Index(){
   return (
 
     <Container>
@@ -17,12 +16,9 @@ export const Place = () => {
 
         <Col xs={6}>
           <SecondNav link1="Publicaciones" link2="Reseña"/>
-          {/* <PlaceNav /> */}
-          
           <PublicationCard/>
           <PublicationCard/>
           <PublicationCard/>
-
         </Col>
 
         <Col>
