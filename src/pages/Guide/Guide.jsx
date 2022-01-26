@@ -1,6 +1,6 @@
 // import './App.css';
 import SecondNav from "../../components/SecondNav";
-import InfoGuide from "../../components/InfoGuide";
+import InfoGuide from "../../components/Guide/InfoGuide";
 import ReviewCard from "../../components/Place/ReviewCard";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

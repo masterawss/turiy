@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from 'react-router-dom';
-import user from '../assets/img/user.jpeg';
+import user from '../../assets/img/user.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 const AvaibleGuide = (props) => {

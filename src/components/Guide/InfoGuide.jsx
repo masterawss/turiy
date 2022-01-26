@@ -1,5 +1,5 @@
 import * as React from "react";
-import FotoGuide from '../assets/img/user.jpeg';
+import FotoGuide from '../../assets/img/user.jpeg';
 const InfoGuide = () => {
   return (
     <div className="nkn-vertical-align">
