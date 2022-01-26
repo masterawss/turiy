@@ -12,7 +12,6 @@ export default function Guide(){
             <Container>
                 <Row>
                     <Col sm={6} lg={3}>
-                        Datos guia
                         <InfoGuide></InfoGuide>
                     </Col>
                     <Col sm={6} lg={6}>
