@@ -8,12 +8,12 @@ var link2 ="";
 const SecondNav = (props) => {
   
   if(props.link1 === "Lugares visitados"){
-    link1="/profile/show/visited";
+    link1="/profile/visited";
   } else if (props.link1 === "Publicaciones"){
     link1="";
   }
   if(props.link2 === "Guardados"){
-    link2="/profile/show/saved";
+    link2="/profile/saved";
   } else if (props.link2 === "Reseña"){
     link2="/place/review";
   }

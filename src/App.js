@@ -3,10 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import LandingPage from "./pages/LandingPage/Index";
 import Home from "./pages/Home/Index";
-import Publication from "./pages/Place/Index";
-import Review from "./pages/Place/Review";
-import Visited from "./pages/Profile/Visited";
-import Saved from "./pages/Profile/Saved";
+import PublicationPlace from "./pages/Place/Index";
+import ReviewPlace from "./pages/Place/Review";
+import VisitedPlace from "./pages/Profile/Visited";
+import SavedPlace from "./pages/Profile/Saved";
 import Guide from './pages/Guide/Guide';
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
       <Route path="/" element={<MainLayout/>}>
         <Route path="" element={<LandingPage/>} />
         <Route path="home" element={<Home/>} />
-        <Route path="/place/publication" element={<Publication/>} />
-        <Route path="/place/review" element={<Review/>} />
+        <Route path="/place/publication" element={<PublicationPlace/>} />
+        <Route path="/place/review" element={<ReviewPlace/>} />
         <Route path="/guide" element={<Guide/>} />
-        <Route path="/profile/visited" element={<Visited/>} />
-        <Route path="/profile/saved" element={<Saved/>} />        
+        <Route path="/profile/visited" element={<VisitedPlace/>} />
+        <Route path="/profile/saved" element={<SavedPlace/>} />        
       </Route>
     </Routes>
   );
