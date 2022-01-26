@@ -1,7 +1,7 @@
 // import './App.css';
-import SecondNav from "../../../components/SecondNav";
-import PlaceSavedCard from "../../../components/Place/PlaceSavedCard";
-import User from "../../../components/Place/User";
+import SecondNav from "../../components/SecondNav";
+import PlaceSavedCard from "../../components/Place/PlaceSavedCard";
+import User from "../../components/Place/User";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

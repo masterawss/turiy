@@ -5,8 +5,8 @@ import LandingPage from "./pages/LandingPage/Index";
 import Home from "./pages/Home/Index";
 import Publication from "./pages/Place/Index";
 import Review from "./pages/Place/Review";
-import Visited from "./pages/Profile/Show/Visited";
-import Saved from "./pages/Profile/Show/Saved";
+import Visited from "./pages/Profile/Visited";
+import Saved from "./pages/Profile/Saved";
 import Guide from './pages/Guide/Guide';
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
         <Route path="/place/publication" element={<Publication/>} />
         <Route path="/place/review" element={<Review/>} />
         <Route path="/guide" element={<Guide/>} />
-        <Route path="/profile/show/visited" element={<Visited/>} />
-        <Route path="/profile/show/saved" element={<Saved/>} />        
+        <Route path="/profile/visited" element={<Visited/>} />
+        <Route path="/profile/saved" element={<Saved/>} />        
       </Route>
     </Routes>
   );

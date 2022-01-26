@@ -1,9 +1,9 @@
-import { PublicationCard } from "../../../components/Place/PublicationCard";
+import { PublicationCard } from "../../components/Place/PublicationCard";
 import Container from 'react-bootstrap/Container';
-import SecondNav from "../../../components/SecondNav";
+import SecondNav from "../../components/SecondNav";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import User from "../../../components/Place/User";
+import User from "../../components/Place/User";
 
 export default function Visitados(){
     return (
