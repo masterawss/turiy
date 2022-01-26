@@ -11,7 +11,9 @@ function CallToAction() {
                 </h3>
                 
                 <Button className="px-4" >
-                    <Link to="place" style={{ fontWeight: 'bold', fontSize: 23, px: 4, color: '#fff'}}>Ingresar</Link>
+                    <div style={{ fontWeight: 'bold', fontSize: 23, px: 4}}>
+                        Ingresar
+                    </div>
                 </Button>
             </div>
         </>
