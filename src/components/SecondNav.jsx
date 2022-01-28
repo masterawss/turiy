@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { Nav, NavLink } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import '../assets/style/secondNav.css';
 var link1 ="";
 var link2 ="";
 
 
 const SecondNav = (props) => {
-  
+// export default function SecondNav(props){
   if(props.link1 === "Lugares visitados"){
     link1="/profile/visited";
   } else if (props.link1 === "Publicaciones"){
@@ -19,10 +19,20 @@ const SecondNav = (props) => {
   }
 
   return (
-    <Nav className="me-auto">    
-      <Link to={link1} className="nav-link">{props.link1}</Link>  
-      <Link to={link2} className="nav-link">{props.link2}</Link> 
-    </Nav>
+    <div >  
+      <NavLink 
+        className={({ isActive }) => isActive ? "active" : ""}
+        to={link1} >
+          {props.link1}
+      </NavLink>  
+      <NavLink 
+        className={({ isActive }) => isActive ? "active" : ""}
+        to={link2} >
+          {props.link2}
+      </NavLink> 
+      
+    </div>
+    
   );
 };
 export default SecondNav;

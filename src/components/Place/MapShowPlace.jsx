@@ -9,8 +9,6 @@ export const MapShowPlace = () => {
       <Card border="light" style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Img className="img-mapShowPlace" variant="top" src={images.VisitMap} />
-
-          
         </Card.Body>
       </Card>
     </>
