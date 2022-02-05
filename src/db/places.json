@@ -1,0 +1,43 @@
+{
+    "places": [
+        {
+            "id": 1,
+            "title": "1",
+            "description": "Hoplx",
+            "extra_info": "TEXTO LARGO CON WYSIWYG",
+            "categories": [ "turistico" ],
+            "images": [ "URL1", "URL2" ],
+            "stars": 4.5,
+            "coordinates": { "lat": -2133, "lng": 4523 },
+            "reviews": [
+                {
+                    "user_id": 1,
+                    "comment": "Lorem ipsum",
+                    "starts": 4.5,
+                    "images": [
+                        "URL1", "URL2"
+                    ]
+                }
+            ]
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "type": "turist",
+            "places_visited": [1, 2, 3, 4],
+            "profile_url": "URL",
+            "reviews": [
+                {
+                    "user_id": 1,
+                    "comment": "Lorem ipsum",
+                    "starts": 4.5,
+                    "images": [
+                        "URL1", "URL2"
+                    ]
+                }
+            ]
+        }
+    ]
+}

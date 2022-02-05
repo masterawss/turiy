@@ -1,0 +1,22 @@
+name: turiy
+config:
+  node: 14
+  build:
+    - npm install
+  command: npm start
+  # webroot: public
+  # php: '8.0'
+  # database: postgres:9.6
+  database: mongo
+services:
+  node:
+    type: node:14
+  mongo:
+    type: mongo:4.0
+    # globals:
+      # gulp-cli: "latest"
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
