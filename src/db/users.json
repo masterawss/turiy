@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "title": "1",
-        "description": "Hoplx",
-        "extra_info": "TEXTO LARGO CON WYSIWYG",
-        "categories": [ "turistico" ],
-        "images": [ "URL1", "URL2" ],
+        "name": "John Doe",
+        "provider": "facebook",
+        "social_token": "asdadasdasda",
+        "type": "turist",
+        "places_visited": [1, 2, 3, 4],
+        "profile_url": "URL",
         "stars": 4.5,
-        "coordinates": { "lat": -6.489425, "lng": -76.376167 },
         "reviews": [
             {
                 "user_id": 1,
@@ -17,7 +17,6 @@
                     "URL1", "URL2"
                 ]
             }
-        ],
-        "guides": [1]
+        ]
     }
 ]
