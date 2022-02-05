@@ -13,6 +13,11 @@ import Review from "./pages/Place/Show/Review";
 import { Place } from "./pages/Place/Place";
 import { ShowGuide } from "./pages/Profile/Show/ShowGuide";
 
+// PLACE --------------------------
+// place/           -> INDEX
+// place/:id        -> SHOW
+// place/:id/create -> CREATE
+// place/:id/edit   -> EDIT
 
 function App() {
   return (

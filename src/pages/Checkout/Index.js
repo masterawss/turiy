@@ -5,10 +5,8 @@ import '../../assets/style/Checkout/Checkout.css'
 
 export default function Index(){
     return (
-        <>
-           
-            <FormCheckout></FormCheckout>
-            
+        <> 
+            <FormCheckout></FormCheckout>  
         </>
     );
 }

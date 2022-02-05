@@ -1,12 +1,12 @@
 // import { Grid, Item } from '@mui/material';
 import { Col, Container, Row } from 'react-bootstrap';
 import { amber, green, grey, lightGreen } from 'material-ui-colors';
-import bg from '../../assets/img/bg1.png'
-import person from '../../assets/img/person1.png'
+// import bg from '../../assets/img/bg1.png'
+import person from '../../assets/img/tourvector.png';
 function Hero() {
   return (
     <>
-        <div style={{background: `url(${bg}) no-repeat center right`, backgroundSize: '50%'}}>
+        <div>
             <Container>
                 <Row className="align-items-center py-4">
                     <Col>
