@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+$theme-colors: (
+    "primary": rgb(81, 32, 216),
+    "secondary": teal
+);
+
+*{
+  margin: 0px;
+  font-family: Nunito;
+}
+
+.btn{
+  border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.outline-none:focus{
+  outline: none;
+}
+.card{
+  border: 0px;
+}

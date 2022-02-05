@@ -1,11 +1,11 @@
 import '../../assets/style/Home/style.css'
 import GoogleMapReact from 'google-map-react';
-import SectionSearch from "../../components/Home/SectionSearch";
+import SectionSearch from "components/Home/SectionSearch";
 import { useEffect, useState } from 'react';
-import Marker from '../../components/Marker';
-import { getCloserPlaces } from '../../utils/ApiController';
-import PlaceItem from '../../components/Item/PlaceItem';
-import { getMapStyle } from '../../utils/mapStyle';
+import Marker from 'components/Marker';
+import { getPlaces } from 'api/PlaceApi';
+import PlaceItem from 'components/Item/PlaceItem';
+import { getMapStyle } from 'utils/mapStyle';
 export default function Index(props){
 
     const [mapData, setMapData] = useState({
@@ -17,14 +17,23 @@ export default function Index(props){
     })
 
     const [places, setPlaces] = useState([])
+    useEffect(() => {
+        getPlaces().then(places => {
+            console.log(places);
+            setPlaces(places)
+        })
+    }, []);
 
     useEffect(() => {
         getCurrentPosition()
     }, []);
 
-    useEffect(() => {
-        setPlaces(getCloserPlaces())
-    }, []);
+    
+
+
+    // useEffect(() => {
+    //     setPlaces(getPlaces())
+    // }, []);
 
     return (
     <>
@@ -42,8 +51,8 @@ export default function Index(props){
                         (<Marker
                             place={place}
                             key={place.id}
-                            lat={place.lat}
-                            lng={place.lng}
+                            lat={place.coordinates.lat}
+                            lng={place.coordinates.lng}
                         />)
                     )
                 }
