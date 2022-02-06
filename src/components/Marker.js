@@ -1,18 +1,14 @@
-import imageUrl from '../assets/logo.svg';
-
+import { ImageMarker } from "assets/style/Home/style.component";
 export default function Marker({ place }){
     // const marker = <img src={imageUrl} />;
+    const isVisited = true;
+
+    
+
     return (
-        <div className="row justify-content-center align-items-center">
-            {
-                place.isVisited && 
-                <div className="col-12" style={{ backgroundColor: 'red'}}>
-                    <img src={imageUrl} alt="props" />
-                </div>
-            }
-            <div className="col-12" >
-                <img style={{ marginTop: '-60px', filter: place.isVisited ? 'grayscale(1)' : 'grayscal(0)'}} src={imageUrl} alt="" />
-            </div>
+        <div style={{backgroundColor: 'red'}}>
+            <ImageMarker src={place.images[0]} alt="props" isVisited={isVisited}>
+            </ImageMarker>
         </div>
     )
 }

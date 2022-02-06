@@ -6,6 +6,7 @@ import Marker from 'components/Marker';
 import { getPlaces } from 'api/PlaceApi';
 import PlaceItem from 'components/Item/PlaceItem';
 import { getMapStyle } from 'utils/mapStyle';
+
 export default function Index(props){
 
     const [mapData, setMapData] = useState({
@@ -19,7 +20,6 @@ export default function Index(props){
     const [places, setPlaces] = useState([])
     useEffect(() => {
         getPlaces().then(places => {
-            console.log(places);
             setPlaces(places)
         })
     }, []);
@@ -30,11 +30,6 @@ export default function Index(props){
 
     
 
-
-    // useEffect(() => {
-    //     setPlaces(getPlaces())
-    // }, []);
-
     return (
     <>
         <div style={{ height: '92.4vh', width: '100%' }}>
@@ -42,20 +37,15 @@ export default function Index(props){
             bootstrapURLKeys={{ key: 'AIzaSyA4Zx1bfk5gqw4aBMjbAQJJxPfxJo3WWcs' }}
             defaultCenter={mapData.center}
             defaultZoom={mapData.zoom}
-            options={{
-                styles: getMapStyle()
-              }}
+            options={{ styles: getMapStyle() }}
             >
-                {
-                    places.map((place) => 
-                        (<Marker
-                            place={place}
-                            key={place.id}
-                            lat={place.coordinates.lat}
-                            lng={place.coordinates.lng}
-                        />)
-                    )
-                }
+                {places.map((place) => 
+                    <Marker
+                        place={place}
+                        key={place.id}
+                        lat={place.coordinates.lat}
+                        lng={place.coordinates.lng} />
+                )}
             </GoogleMapReact>
         </div>
         <div className="fixed-top mt-5 pt-4">

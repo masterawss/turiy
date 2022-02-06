@@ -10,27 +10,29 @@ export default function PlaceItem({place}){
                     <Stack direction="horizontal" gap={4}>
                         <img 
                             style={{width: '120px', height: '124px', objectFit: 'cover'}} 
-                            src={place.imageUrl} className="rounded float-start" alt="..."/>
+                            src={place.images[0]} className="rounded float-start" alt="..."/>
                         <div className="p-2">
                             <div>
-                                <strong>Nombre del lugar</strong>
+                                <strong>{place.title}</strong>
                             </div>
                             <br/>
                             <div className="my-1">
                                 <div>
                                     <FontAwesomeIcon style={{color: 'orange'}} icon={faStar} />
-                                    <span className="text-muted ml-3">4.8 (30 reviews)</span>
+                                    <span className="text-muted ml-3">{place.stars} ({place.reviews.length} reviews)</span>
                                 </div>
                                 <br/>
                                 <div>
                                     <FontAwesomeIcon style={{color: 'gray'}} icon={faUsers} />
-                                    <span className="text-muted ml-3">15 guías</span>
+                                    <span className="text-muted ml-3">{place.guides.length} guías</span>
                                 </div>
                             </div>
                             <br/>
-                            <Badge pill bg="primary">
-                                Primary
-                            </Badge>
+                            {place.categories.map(category => 
+                                <Badge key="category" pill bg="primary">
+                                    {category}
+                                </Badge>    
+                            )}
                         </div>
                     </Stack>
                 </Card.Body>
