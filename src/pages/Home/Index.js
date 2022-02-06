@@ -6,6 +6,7 @@ import Marker from 'components/Marker';
 import { getPlaces } from 'api/PlaceApi';
 import PlaceItem from 'components/Item/PlaceItem';
 import { getMapStyle } from 'utils/mapStyle';
+import ModalPlace from 'components/Home/ModalPlace';
 
 export default function Index(props){
 
@@ -58,6 +59,7 @@ export default function Index(props){
                 </div>
             )}
         </div>
+        <ModalPlace />
     </>
     );
 

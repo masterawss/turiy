@@ -6,7 +6,8 @@
             "assets": ["src/assets"],
             "pages": ["src/pages"],
             "utils": ["src/utils"],
-            "api": ["src/api"]
+            "api": ["src/api"],
+            "store": ["src/store"]
         }
     },
     "exclude": ["node_modules"],
