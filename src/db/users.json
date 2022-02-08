@@ -7,7 +7,7 @@
         "provider": "facebook",
         "social_token": "asdadasdasda",
         "type": "turist",
-        "places_visited": [1, 2, 3, 4],
+        "places_visited": [1, 2, 3, 4, 5],
         "profile_url": "URL",
         "stars": 4.5,
         "reviews": [
