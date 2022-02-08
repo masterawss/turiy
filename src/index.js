@@ -12,6 +12,8 @@ import '@fontsource/nunito/700.css';
 
 import '@fortawesome/react-fontawesome';
 
+import { Provider } from 'react-redux'
+import store from 'store/index'
 // const theme = createTheme({
 //   typography: {
 //     fontFamily: [
@@ -21,9 +23,11 @@ import '@fortawesome/react-fontawesome';
 // });
 
 ReactDOM.render(
+  <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
+  </Provider>
   ,
   document.getElementById('root')
 );

@@ -1,18 +1,19 @@
-import imageUrl from '../assets/logo.svg';
+import { ImageMarker } from "assets/style/Home/style.component";
+import {
+    openModal
+} from 'store/landing/modalLandingSlice'
+import { useDispatch } from "react-redux";
+import { useState } from "react";
 
 export default function Marker({ place }){
-    // const marker = <img src={imageUrl} />;
+    const [isVisited] = useState(Math.ceil(Math.random() >= 0.5));
+    const dispatch = useDispatch()
+    const handleShowModal = () => dispatch(openModal(place));
     return (
-        <div className="row justify-content-center align-items-center">
-            {
-                place.isVisited && 
-                <div className="col-12" style={{ backgroundColor: 'red'}}>
-                    <img src={imageUrl} alt="props" />
-                </div>
-            }
-            <div className="col-12" >
-                <img style={{ marginTop: '-60px', filter: place.isVisited ? 'grayscale(1)' : 'grayscal(0)'}} src={imageUrl} alt="" />
-            </div>
-        </div>
+        <ImageMarker 
+            onClick={handleShowModal} 
+            src={place.images[0]} alt="props" 
+            isVisited={isVisited}>
+        </ImageMarker>
     )
 }

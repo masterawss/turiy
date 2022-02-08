@@ -3,6 +3,7 @@ import { faDirections, faMapMarkedAlt, faMapMarkerAlt } from '@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { amber, indigo, teal } from 'material-ui-colors';
 import { Col, Container, Row } from 'react-bootstrap';
+import { CSSTransition } from 'react-transition-group';
 import CardFeatureInfo from './CardFeatureInfo';
 function FeaturesSection() {
 
@@ -31,8 +32,21 @@ function FeaturesSection() {
             <Container >
                 <Row>
                     {features.map((feat,i) => (
-                        <Col lg={4} md={4} sm={6} xs={12}>
-                            <CardFeatureInfo key={i} feature={feat}></CardFeatureInfo>
+                        <Col lg={4} md={4} sm={6} xs={12} key={i}>
+                            {/* <CSSTransition  timeout={500} classNames={{
+                                    enterActive: 'animate__bounceIn',
+                                    exitActive: 'animate__bounceOut'
+                                    }} 
+                                    // onEnter={showImage}
+                                    // onEntered={removeOpacity}
+                                    // onExited={hideImage}
+                                    // className={`animate__animated my-4 ${imageClasses}`}
+                                >
+                            </CSSTransition> */}
+                            <div className="animate__bounceIn">
+
+                                <CardFeatureInfo key={i} feature={feat}></CardFeatureInfo>
+                            </div>
                         </Col>
                     ))}
                 </Row>
