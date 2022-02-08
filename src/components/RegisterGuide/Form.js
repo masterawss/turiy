@@ -4,7 +4,11 @@ import { amber, green, grey, lightGreen } from 'material-ui-colors';
 import bg from '../../assets/img/bg1.png'
 import person from '../../assets/img/person1.png'
 import MenuLateral from './MenuLateral';
-function Form() {
+import { useParams } from "react-router-dom";
+function Form(props) {
+
+
+  
   return (
     <>
     <div class="row">

@@ -26,6 +26,8 @@
         {
             "id": 1,
             "name": "John Doe",
+            "phone": "956284349",
+            "mail": "joe@gmail.com",
             "provider": "facebook",
             "social_token": "asdadasdasda",
             "type": "turist",

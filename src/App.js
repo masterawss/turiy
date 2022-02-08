@@ -30,6 +30,10 @@ function App() {
         <Route path="/profile/show/saved" element={<Saved/>} />
         <Route path="/place/show/review" element={<Review/>} />
         <Route path="/profile/show/guia" element={<ShowGuide/>} />
+        <Route path="perfil:id" element={<RegisterGuide/>} />
+        <Route path="registro_guia" element={<RegistroGuia/>} />
+        <Route path="pagos" element={<Checkout/>} />
+        <Route path="validacion" element={<Preform/>} />
       </Route>
     </Routes>
   );
