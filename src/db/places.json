@@ -74,5 +74,49 @@
             }
         ],
         "guides": [1]
+    }, {
+        "id": 4,
+        "title": "Machu Pichu",
+        "description": "es el nombre contemporáneo que se da a una llacta —antiguo poblado incaico andino— construida antes del siglo xv, ubicada en la Cordillera Oriental del sur del Perú, en la cadena montañosa de Los Andes a 2430 metros sobre el nivel del mar. ",
+        "extra_info": " Está ubicada en la región Cusco, provincia de Urubamba, distrito de Machupicchu, sobre el Valle Sagrado de los Incas, a 80 kilómetros al noroeste de la ciudad de Cusco, ciudad del Perú y por donde fluye el río Urubamba, río que atraviesa la cordillera y origina un cañón con clima de montaña tropical. Según muchos estudiosos su nombre original habría sido Llaqtapata.",
+        "categories": [ "Naturaleza" ],
+        "images": [ 
+            "https://viajes.nationalgeographic.com.es/medio/2018/03/01/machu-picchu_5ff969ae_1280x720.jpg"
+        ],
+        "stars": 4.6,
+        "coordinates": { "lat": -6.4522931, "lng": -76.378608 },
+        "reviews": [
+            {
+                "user_id": 1,
+                "comment": "Lugar mágico que te transporta al pasado.",
+                "starts": 4.6,
+                "images": [
+                    "https://static.hosteltur.com/app/public/uploads/img/articles/2020/05/12/M_084657_machu-picchu003.jpg"
+                ]
+            }
+        ],
+        "guides": [1]
+    }, {
+        "id": 5,
+        "title": "Cartagena de Indias",
+        "description": "Cartagena es una ciudad portuaria en la costa caribeña de Colombia. Junto al mar, se encuentra la Ciudad Vieja amurallada, que se fundó en el siglo XVI, con plazas, calles de adoquines y edificios coloniales coloridos. Con un clima tropical, la ciudad también es un destino popular por sus playas. ",
+        "extra_info": "Cartagena ha sido una ciudad presente en medio de conflictos bélicos como también en la piratería, pues fue aquí donde se produjeron numerosos ataques por parte de los piratas y corsarios provenientes de Europa, lo cual supuso que fuera fuertemente amurallada y fortificada durante la administración española, hasta el punto de ser la fortaleza más robusta de América del Sur y del Caribe, llegando a estar casi tan reforzada como el mismo Golfo de México en su época. En la actualidad se mantiene su arquitectura virreinal.",
+        "categories": [ "Ciudad Historica" ],
+        "images": [ 
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Baluarte_de_Santiago_CTG_11_2019_9804.jpg/800px-Baluarte_de_Santiago_CTG_11_2019_9804.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Castillo_San_Felipe_ingreso.JPG/800px-Castillo_San_Felipe_ingreso.JPG"
+        ],
+        "stars": 4.6,
+        "coordinates": { "lat": -6.4522931, "lng": -76.378608 },
+        "reviews": [
+            {
+                "user_id": 1,
+                "comment": "La ciudad mas Bonita de Colombia.",
+                "starts": 4.6,
+                "images": [
+                    "https://www.semana.com/resizer/dUJnDIV4AK85JtksI7IKw6xMwCk=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/R5HGYMAGUVBTVGTDYRGG6PFV5I.jpg"
+                ]
+            }
+        ],
+        "guides": [1]
     }
 ]
