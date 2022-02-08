@@ -34,9 +34,9 @@ function FormRegistro() {
        <Col><div ng-app ng-init="checked = false">
                    <form class="form-signin" action="" method="post" name="form">
              <label for="username">Nombres</label>
-             <input class="form-styling" type="text" name="username" value="Ricardo Ignacio"/>
+             <input class="form-styling" type="text" name="username" value=""/>
              <label for="password">Apellidos</label>
-             <input class="form-styling" type="text" name="lastname" value="Contreras Luna"/>
+             <input class="form-styling" type="text" name="lastname" value=""/>
    
 
                <Container><Row><Col> <label for="password">Subir Documento de Identidad</label>

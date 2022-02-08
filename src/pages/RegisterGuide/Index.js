@@ -91,42 +91,17 @@ export default function Index(props){
            
           
           
-           <h1>Ricardo Ignacio</h1>
+           <h1>Turiy</h1>
            
           
-           <h2>Another Web Designer</h2>
+           <span>Recuerda que puedes postularte para ser guia y compartir tus conocimientos con el mundo</span>
            
          </header>
          
      
          
        
-         <ul class="profile-social-links">
-           
-          
-           <li>
-             <a href="https://twitter.com/alishahab">
-               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg"></img>
-             </a>
-           </li>
-           
-           
-           <li>
-             <a href="http://themeforest.net/user/alishahab">
-               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-envato.svg"></img>
-             </a>
-           </li>
-           
-         
-           <li>
-             <a href="https://codepen.io/alishahab">
-               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-codepen.svg"></img>
-             </a>
-           </li>
-           
-           
-           
-         </ul>
+        
          
        </aside></Col>
          </Row>
