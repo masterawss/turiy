@@ -2,6 +2,7 @@ import { Badge, Card, Stack } from "react-bootstrap";
 import { faStar, faUsers} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "react-router-dom";
+
 export default function PlaceItem({place}){
     return (
         <Link to={'place/'+place.id}>
