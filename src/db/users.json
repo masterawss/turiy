@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "provider": "facebook",
+        "social_token": "asdadasdasda",
+        "type": "turist",
+        "places_visited": [1, 2, 3, 4],
+        "profile_url": "URL",
+        "stars": 4.5,
+        "reviews": [
+            {
+                "user_id": 1,
+                "comment": "Lorem ipsum",
+                "starts": 4.5,
+                "images": [
+                    "URL1", "URL2"
+                ]
+            }
+        ]
+    }
+]
