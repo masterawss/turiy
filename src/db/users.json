@@ -21,5 +21,15 @@
                 ]
             }
         ]
+    },
+    {
+        "id": 2,
+        "name": "Pedro Quiñones",
+        "provider": "facebook",
+        "social_token": "xxxxxxxxxxxx",
+        "type": "turist",
+        "comment": "Cartagena es una PRECIOSA ciudad del Caribe colombiano. La ciudad antigua es su mayor atractivo: su historia, sus edificaciones antiguas, sus monumentos, sus restaurantes la hacen HERMOSA. La ciudad nueva, también es muy bonita",
+        "places_visited": "Cartagena",
+        "images":["https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/cartagena/ciudad-cartagena-800.jpg", "https://i2.wp.com/ail.ens.org.co/wp-content/uploads/sites/3/2020/03/Cartagena.jpg?resize=847%2C450&ssl=1"]
     }
 ]

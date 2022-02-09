@@ -19,7 +19,7 @@ export const PublicationCard = ({guide}) => {
             width={141}
             height={150}
             alt="171x180"
-            src={guide.images[0]}
+            src={guide.images[1]}
           />
         </Figure>
       </Card.Body>
