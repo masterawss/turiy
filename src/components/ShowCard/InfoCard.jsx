@@ -1,31 +1,28 @@
 import React from "react";
 import images from "../../assets/style/images";
 import { Card } from "react-bootstrap";
-import db from "../../db/places.json"
-export const InfoCard = () => {
+
+export const InfoCard = ({place}) => {
   return (
     <>
       <Card border="light" style={{ width: "18rem" }}>
         <Card.Body>
-          <Card.Title>title</Card.Title>
-          <Card.Img variant="top" src={images.machuPichuImg} />
+          <Card.Title>{place.title}</Card.Title>
+          <Card.Img variant="top" src={place.images[0]} />
           <Card.Text>
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s,
+            {place.description}
           </Card.Text>
 
           <Card.Title>Información a tener en cuenta</Card.Title>
 
           <Card.Text>
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's
+            {place.extra_info}
           </Card.Text>
 
           <Card.Title>Otra Información</Card.Title>
 
           <Card.Text>
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's
+           {place.categories}
           </Card.Text>
         </Card.Body>
       </Card>

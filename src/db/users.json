@@ -7,13 +7,14 @@
         "provider": "facebook",
         "social_token": "asdadasdasda",
         "type": "turist",
-        "places_visited": [1, 2, 3, 4, 5],
+        "comment": "Es una ciudad mágica, se siente el ambiente caribeño por todos lados, su parte moderna y antigua se combinan para dar un toque excelente a esta ciudad. La gente es muy cálida y amigable.",
+        "places_visited": "Cartagena",
+        "images":["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Baluarte_de_Santiago_CTG_11_2019_9804.jpg/800px-Baluarte_de_Santiago_CTG_11_2019_9804.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Castillo_San_Felipe_ingreso.JPG/800px-Castillo_San_Felipe_ingreso.JPG"],
         "profile_url": "URL",
         "stars": 4.5,
         "reviews": [
             {
                 "user_id": 1,
-                "comment": "Lorem ipsum",
                 "starts": 4.5,
                 "images": [
                     "URL1", "URL2"
