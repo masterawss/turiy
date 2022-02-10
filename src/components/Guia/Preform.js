@@ -24,10 +24,10 @@ function Preform() {
 
    <div class="contenido_guia">
 	   <div><img class="img_test" src="https://saaccionasostenibilidad.blob.core.windows.net/media/512080/guia-turismo-sostenible.jpg"></img></div>
-	   <div>
+	   <div style={{textAlign: "center"}}      >
    <h1 class="textos">Aun no eres guia de turismo</h1><br></br>
    <h3>Convierte en uno y ayuda a las personas a conocer el mundo</h3>
-   <span><a href="registro_guia" class="button">Descubre Como ser Guia</a></span>
+   <span><a href="registro_guia1" class="btn btn-primary">Descubre Como ser Guia</a></span>
    </div>
    </div>
 

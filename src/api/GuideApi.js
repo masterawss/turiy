@@ -1,11 +1,11 @@
-import db from 'db/places.json'
+import db from 'db/users.json'
 
 export async function getGuides(){
-    return db.users;
+    return db;
 }
 export async function getGuide(id){
     // FILTRAR RESULTADOS
-    let users = db.users.filter(users => users.id == id )
+    let users = db.filter(user => user.id == id )
 
     // RETORNAR RESULTADOS
     return users;

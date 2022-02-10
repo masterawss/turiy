@@ -21,6 +21,12 @@ export default function Index(props){
         })
     }, []);
 
+
+    const mystyle = {
+      width: "100%",
+    borderradius: "56px"
+    };
+
  
 
 
@@ -58,14 +64,14 @@ export default function Index(props){
                       
 
                        {users.map((place, i) => 
-                        <form class="form-signin" action="" method="post" name="form">
-                        <label for="username">Nombres</label>
-                        <input class="form-styling" type="text" name="username" value={place.name}></input>
-                        <label for="password">Apellidos</label>
-                        <input class="form-styling" type="text" name="lastname" value={place.provider}/>
+        <form class="form-signin" action="" method="post" name="form">
+        <label for="username">Nombres</label>
+        <input class="form-styling" type="text" name="username" value={place.name}></input>
+       <label for="password">Apellidos</label>
+      <input class="form-styling" type="text" name="lastname" value={place.provider}/>
        
-                          <label for="password">Telefono</label>
-                          <input class="form-styling" type="text" name="phone" value={place.phone}/>
+      <label for="password">Telefono</label>
+      <input class="form-styling" type="text" name="phone" value={place.phone}/>
 
        <label for="password">Correo</label>
        <input class="form-styling" type="text" name="mail" value={place.mail}/>
@@ -86,15 +92,15 @@ export default function Index(props){
                   </div></Col>
            <Col><aside class="profile-card">
          
-         <header>
+         <header style={{textAlign:"center"}}>
            
            
           
-          
+         <img src="https://thumbs.dreamstime.com/b/hombre-sonriendo-de-la-mano-en-cabeza-respirando-profundamente-disfrutando-vida-mirando-al-cielo-azul-sintiendo-profundo-aliento-191739623.jpg" style={mystyle}></img>
            <h1>Turiy</h1>
            
           
-           <span>Recuerda que puedes postularte para ser guia y compartir tus conocimientos con el mundo</span>
+           <span >Recuerda que puedes postularte para ser guia y compartir tus conocimientos con el mundo</span>
            
          </header>
          
