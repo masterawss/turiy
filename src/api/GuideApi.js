@@ -1,11 +1,15 @@
-import db from 'db/places.json'
-export async function getGuides(){
-    return db.users;
-}
-export async function getGuide(id){
-    // FILTRAR RESULTADOS
-    let users = db.users.filter(users => users.id == id )
+import guie_db from 'db/users.json'
 
+export async function getGuides(){
+    return guie_db;
+}
+
+export async function getGuide(id){
+     // FILTRAR RESULTADOS
+    let guie = guie_db.filter(guie => guie.id == id )
     // RETORNAR RESULTADOS
-    return users;
-} 
+    return guie;
+}
+  
+
+    

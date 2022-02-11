@@ -1,17 +1,16 @@
 import React from "react";
 import "../../assets/style/Home/style.css";
 import { Card, Figure } from "react-bootstrap";
-import images from "../../assets/style/images";
 
-export const PublicationCard = () => {
+
+export const PublicationCard = ({guide}) => {
   return (
     <Card className="details-Card">
       <Card.Body>
-        <Card.Title>Maday</Card.Title>
+        <Card.Title>{guide.name} <i>({guide.type})</i></Card.Title>
         <Card.Text>
-          Al contrario del pensamiento popular, el texto de Lorem Ipsum no es
-          simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de
-          la literatura del Latin, que data del año 45 antes de Cristo
+          <Card.Subtitle>{guide.places_visited}</Card.Subtitle>
+        {guide.comment}
         </Card.Text>
 
         <Figure>
@@ -20,25 +19,8 @@ export const PublicationCard = () => {
             width={141}
             height={150}
             alt="171x180"
-            src={images.sanandres}
+            src={guide.images[1]}
           />
-
-          <Figure.Image
-            className="img-publication"
-            width={141}
-            height={150}
-            alt="171x180"
-            src={images.villadeleiva}
-          />
-
-          <Figure.Image
-            className="img-publication"
-            width={141}
-            height={150}
-            alt="171x180"
-            src={images.bogota}
-          />
-          
         </Figure>
       </Card.Body>
     </Card>
