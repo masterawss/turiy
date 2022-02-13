@@ -9,7 +9,7 @@ const SecondNav = (props) => {
   if(props.link1 === "Lugares visitados"){
     link1="/profile/visited";
   } else if (props.link1 === "Publicaciones"){
-    link1="";
+    link1="/place/publication";
   }
   if(props.link2 === "Guardados"){
     link2="/profile/saved";
@@ -18,14 +18,14 @@ const SecondNav = (props) => {
   }
 
   return (
-    <div >  
+    <div className='nav link'>  
       <NavLink 
-        className={({ isActive }) => isActive ? "active" : ""}
+        className={({ isActive }) => isActive ? "active " : ""}
         to={link1} >
           {props.link1}
       </NavLink>  
       <NavLink 
-        className={({ isActive }) => isActive ? "active" : ""}
+        className={({ isActive }) => isActive ? "active " : ""}
         to={link2} >
           {props.link2}
       </NavLink> 

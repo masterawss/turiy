@@ -1,5 +1,5 @@
 import React from "react";
-import images from "../../assets/style/images";
+// import images from "../../assets/style/images";
 import { Card } from "react-bootstrap";
 
 export const InfoCard = ({place}) => {

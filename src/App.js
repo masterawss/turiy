@@ -1,11 +1,12 @@
 import * as React from "react";
+import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import LandingPage from "./pages/LandingPage/Index";
 import Home from "./pages/Home/Index";
 import RegisterGuide from "./pages/RegisterGuide/Index";
 import RegistroGuia from "./pages/RegistroGuia/Index";
 import Checkout from "./pages/Checkout/Index";
-import { Route, Routes } from "react-router-dom";
+
 import Preform from "./components/Guia/Preform";
 import Place from "./pages/Place/Index";
 import Publication from "./pages/Place/Publication";
@@ -55,7 +56,7 @@ function App() {
       <Route path="/" element={<MainLayout/>}>
         <Route path="" element={<LandingPage/>} />
         <Route path="home" element={<Home/>} />
-        <Route path="/place/*" element={<Place/>}>
+        <Route path="place/*" element={<Place/>}>
           <Route path="publication" element={<Publication/>}/>
           <Route path="review" element={<Review/>} />
         </Route>  

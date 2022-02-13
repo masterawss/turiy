@@ -5,14 +5,26 @@ import SecondNav from '../../components/SecondNav';
 import { InfoCard } from "../../components/Place/InfoCard";
 import AvaibleGuide from "../../components/Guide/AvaibleGuide";
 import {MapShowPlace} from "../../components/Place/MapShowPlace";
+import { getPlaces } from "api/PlaceApi";
+import React, { useEffect, useState } from "react";
+
 
 export default function Index(){
+    const [places, setPlaces] = useState([]);
+    useEffect(() => {
+        getPlaces().then((places) => {
+            setPlaces(places);
+        });
+    }, []);    
+    
   return (
 
     <Container>
       <Row>
         <Col >
-          <InfoCard />
+        {places.map((place) => (
+            <InfoCard place={place} key={place.id} />
+        ))}
         </Col>
 
         <Col xs={6}>
