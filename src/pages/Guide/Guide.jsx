@@ -1,27 +1,23 @@
 // import './App.css';
-import SecondNav from "../../../components/SecondNav";
-import ReviewCard from "../../../components/ReviewCard";
+import SecondNav from "../../components/SecondNav";
+import InfoGuide from "../../components/Guide/InfoGuide";
+import ReviewCard from "../../components/Place/ReviewCard";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-export default function Review(){
+
+export default function Guide(){
     return (
         <>
             <Container>
                 <Row>
                     <Col sm={6} lg={3}>
-                        Datos guia
+                        <InfoGuide></InfoGuide>
                     </Col>
                     <Col sm={6} lg={6}>
-                        <SecondNav/>
+                        <SecondNav link1="Tours" link2="Reseña"/>
                         <ReviewCard/>
                         <ReviewCard/>
-                    </Col>
-                    <Col sm={12} lg={3}>
-                        <section>
-                            <h5>GUIAS DISPONIBLES</h5>
-                        </section>
-                        
                     </Col>
                 </Row>
             </Container>          
