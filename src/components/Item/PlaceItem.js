@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function PlaceItem({place}){
     return (
-        <Link to={'place/'+place.id}>
+        <Link to={'/place/'+place.id}>
             <Card>
                 <Card.Body>
                     <Stack direction="horizontal" gap={4}>
