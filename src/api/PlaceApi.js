@@ -1,4 +1,5 @@
-import places_db from 'db/places.json'
+// import places_db from 'db/places.json'
+import places_db from '../db/places.json'
 
 export async function getPlaces(){
     return places_db;
