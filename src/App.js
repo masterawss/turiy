@@ -26,24 +26,34 @@ import { ShowGuide } from "./pages/Profile/Show/ShowGuide";
 // user/:id        -> SHOW
 
 // PROFILE ------------------------
-// configuration    -> Obtiene siempre el id del usuario de sesión
-// checkout         -> Obtiene siempre el id del usuario de sesión
-// guide_register   -> Obtiene siempre el id del usuario de sesión
+// profile/configuration    -> Obtiene siempre el id del usuario de sesión
+// profile/checkout         -> Obtiene siempre el id del usuario de sesión
+// profile/guide_register   -> Obtiene siempre el id del usuario de sesión
 
 /* <Routes>
   <Route path="/" element={<MainLayout/>}>
     <Route path="" element={<LandingPage/>} />
     <Route path="home" element={<Pages/Home/Index/>} />
-    
-    <Route path="place" element={<Pages/Place/Index/>} />
-    <Route path="place/:id" element={<Pages/Place/Show/>} />
 
-    <Route path="user/:id" element={<Pages/User/Show/>} />
-    
-    <Route path="configuration" element={<Pages/Profile/Configuration/>} />
-    <Route path="checkout" element={<Pages/Profile/Checkout/>} />
-    <Route path="guide_register" element={<Pages/Profile/GuideRegister/>} />
+    <Route path="place/">
+      // <Route path="" element={<Pages/Place/Index/>} />
+      <Route path=":id" element={<Pages/Place/Show/>}>
+        <Route path="reviews" element={<Component/Place/ReviewSection/>}></Route>
+      </Route>
+    </Route>
 
+    <Route path="user/">
+      <Route path=":id/" element={<Pages/User/Show/>}>
+        <Route path="visited" element={<Component/User/VisitedSection/>}></Route>
+        <Route path="saved" element={<Component/User/SavedSection/>}></Route>
+      </Route>
+    </Route>
+
+    <Route path="profile/">
+      <Route path="configuration" element={<Pages/Profile/Configuration/>} />
+      <Route path="checkout" element={<Pages/Profile/Checkout/>} />
+      <Route path="guide_register" element={<Pages/Profile/GuideRegister/>} />
+    </Route>
   </Route>
 </Routes> */
 
@@ -60,7 +70,7 @@ function App() {
         <Route path="/place/show/review" element={<Review/>} />
         <Route path="/profile/show/guia" element={<ShowGuide/>} />
         
-        <Route path="perfil:id" element={<RegisterGuide/>} />
+        <Route path="perfil/:id/create" element={<RegisterGuide/>} />
         <Route path="registro_guia" element={<RegistroGuia/>} />
         <Route path="pagos" element={<Checkout/>} />
         <Route path="validacion" element={<Preform/>} />
