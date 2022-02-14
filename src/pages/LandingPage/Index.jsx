@@ -1,6 +1,6 @@
 // import './App.css';
 import CallToAction from 'components/LandingPage/CallToAction';
-import Hero from 'components/LandingPage/Hero.js'
+import Hero from 'components/LandingPage/Hero'
 import FeaturesSection from 'components/LandingPage/FeaturesSection';
 
 export default function Index(){
