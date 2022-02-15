@@ -75,7 +75,7 @@ export default function Index(){
                  <input type="checkbox" id="checkbox"/>
                  <label for="checkbox" ><span ></span>Aceptar Terminos y condiciones de Uso</label>
                  <div class="btn-animate">
-                   <a class="btn-signin" href="pagos" >Convertirse en GUia de turismo</a>
+                   <a class="btn-signin" href="/../../../profile/checkout" >Convertirse en GUia de turismo</a>
                  </div>
                        </form>
 

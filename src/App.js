@@ -73,11 +73,10 @@ function App() {
         <Route path="/guide" element={<Guide/>} />
         <Route path="/profile/visited" element={<VisitedPlace/>} />
         <Route path="/profile/saved" element={<SavedPlace/>} /> 
-        
-        <Route path="perfil/:id/create" element={<RegisterGuide/>} />
-        <Route path="registro_guia" element={<RegistroGuia/>} />
-        <Route path="pagos" element={<Checkout/>} />
-        <Route path="validacion" element={<Preform/>} />
+        <Route path="profile/user/:id/show" element={<RegisterGuide/>} />
+        <Route path="profile/guide_register/:id/create" element={<RegistroGuia/>} />
+        <Route path="profile/checkout" element={<Checkout/>} />
+        <Route path="profile/guide_register/:id/create" element={<Preform/>} />
       </Route>
     </Routes>
   );

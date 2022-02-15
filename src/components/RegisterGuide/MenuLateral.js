@@ -8,8 +8,8 @@ function MenuLateral() {
     <>
  
  <div class="vertical-menu">
-  <a href="validacion1" >Guia de Turismo</a>
-  <a href="perfil1" class="active">Datos del Usuario</a>
+  <a href="../../../profile/guide_register/1/create" >Guia de Turismo</a>
+  <a href="../../../profile/user/1/show" class="active">Datos del Usuario</a>
  
 </div> 
     </>
