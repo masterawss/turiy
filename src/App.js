@@ -30,10 +30,10 @@ function App() {
         <Route path="/profile/show/saved" element={<Saved/>} />
         <Route path="/place/show/review" element={<Review/>} />
         <Route path="/profile/show/guia" element={<ShowGuide/>} />
-        <Route path="perfil:id" element={<RegisterGuide/>} />
-        <Route path="registro_guia:id" element={<RegistroGuia/>} />
-        <Route path="pagos" element={<Checkout/>} />
-        <Route path="validacion:id" element={<Preform/>} />
+        <Route path="profile/user/:id/show" element={<RegisterGuide/>} />
+        <Route path="profile/guide_register/:id/create" element={<RegistroGuia/>} />
+        <Route path="profile/checkout" element={<Checkout/>} />
+        <Route path="profile/guide_register/:id/create" element={<Preform/>} />
       </Route>
     </Routes>
   );

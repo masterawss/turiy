@@ -30,7 +30,7 @@ const TopBar = () => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item href="/perfil1">Perfil</Dropdown.Item>
+            <Dropdown.Item href="/profile/user/1/show">Perfil</Dropdown.Item>
             <Dropdown.Item href="#/action-1">Configuración</Dropdown.Item>
             <Dropdown.Item href="#/action-3">Cerrar sesión</Dropdown.Item>
           </Dropdown.Menu>
