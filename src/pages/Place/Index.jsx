@@ -1,32 +1,36 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useParams, useSearchParams } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 
 import SecondNav from '../../components/SecondNav';
 import { InfoCard } from "../../components/Place/InfoCard";
 import AvaibleGuide from "../../components/Guide/AvaibleGuide";
 import {MapShowPlace} from "../../components/Place/MapShowPlace";
-import { getPlaces } from "api/PlaceApi";
+import { getPlace } from "api/PlaceApi";
 import React, { useEffect, useState } from "react";
 
 
 export default function Index(){
-    const [places, setPlaces] = useState([]);
+    const { id } = useParams();
+    
+    const [place, setPlace] = useState({});
     useEffect(() => {
-        getPlaces().then((places) => {
-            setPlaces(places);
+        getPlace(id).then((place) => {
+            setPlace(place);
         });
-    }, []);    
+    },[]);
     
   return (
 
     <Container>
       <Row>
         <Col >
-        {places.map((place) => (
-            <InfoCard place={place} key={place.id} />
-        ))}
+            {
+                Object.keys(place).length === 0 
+                ? <strong>Cargando</strong>
+                : <InfoCard place={place} key={place.id} />
+            }
         </Col>
-
+ 
         <Col xs={6}>
           <SecondNav link1="Publicaciones" link2="Reseña"/>
           <Outlet></Outlet>

@@ -8,7 +8,10 @@ export const InfoCard = ({place}) => {
       <Card border="light" style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Title>{place.title}</Card.Title>
+          {
+
           <Card.Img variant="top" src={place.images[0]} />
+          }
           <Card.Text>
             {place.description}
           </Card.Text>
