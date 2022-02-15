@@ -1,12 +1,15 @@
-import db from 'db/users.json'
+import guie_db from 'db/users.json'
 
 export async function getGuides(){
-    return db;
+    return guie_db;
 }
-export async function getGuide(id){
-    // FILTRAR RESULTADOS
-    let users = db.filter(user => user.id == id )
 
+export async function getGuide(id){
+     // FILTRAR RESULTADOS
+    let guie = guie_db.filter(guie => guie.id == id )
     // RETORNAR RESULTADOS
-    return users;
+    return guie;
 }
+  
+
+    

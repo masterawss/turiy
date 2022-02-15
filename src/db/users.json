@@ -5,18 +5,29 @@
         "provider": "facebook",
         "social_token": "asdadasdasda",
         "type": "turist",
-        "places_visited": [1, 2, 3, 4],
+        "comment": "Es una ciudad mágica, se siente el ambiente caribeño por todos lados, su parte moderna y antigua se combinan para dar un toque excelente a esta ciudad. La gente es muy cálida y amigable.",
+        "places_visited": "Cartagena",
+        "images":["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Baluarte_de_Santiago_CTG_11_2019_9804.jpg/800px-Baluarte_de_Santiago_CTG_11_2019_9804.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Castillo_San_Felipe_ingreso.JPG/800px-Castillo_San_Felipe_ingreso.JPG"],
         "profile_url": "URL",
         "stars": 4.5,
         "reviews": [
             {
                 "user_id": 1,
-                "comment": "Lorem ipsum",
                 "starts": 4.5,
                 "images": [
                     "URL1", "URL2"
                 ]
             }
         ]
+    },
+    {
+        "id": 2,
+        "name": "Pedro Quiñones",
+        "provider": "facebook",
+        "social_token": "xxxxxxxxxxxx",
+        "type": "turist",
+        "comment": "Cartagena es una PRECIOSA ciudad del Caribe colombiano. La ciudad antigua es su mayor atractivo: su historia, sus edificaciones antiguas, sus monumentos, sus restaurantes la hacen HERMOSA. La ciudad nueva, también es muy bonita",
+        "places_visited": "Cartagena",
+        "images":["https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/cartagena/ciudad-cartagena-800.jpg", "https://i2.wp.com/ail.ens.org.co/wp-content/uploads/sites/3/2020/03/Cartagena.jpg?resize=847%2C450&ssl=1"]
     }
 ]

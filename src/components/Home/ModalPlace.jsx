@@ -8,6 +8,7 @@ import {
 } from 'store/landing/modalLandingSlice'
 import { useDispatch, useSelector } from "react-redux";
 import { getPlace } from "api/PlaceApi";
+import { Link } from "react-router-dom";
 
 export default function ModalPlace (){
     const modalState = useSelector(selectModalOpened)
@@ -38,9 +39,11 @@ export default function ModalPlace (){
                 <Button variant="secondary" onClick={handleClose}>
                     Cerrar
                 </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Ver lugar
-                </Button>
+                <Link to={'/place/'+placeState.id}>
+                    <Button variant="primary" >
+                        Ver lugar
+                    </Button>
+                </Link>
             </Modal.Footer>
         </Modal>
     )
