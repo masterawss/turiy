@@ -4,7 +4,7 @@ import SectionSearch from "components/Home/SectionSearch";
 import { useEffect, useState } from 'react';
 import Marker from 'components/Marker';
 import { getPlaces } from 'api/PlaceApi';
-import PlaceItem from 'components/Item/PlaceItem';
+import PlaceItem from 'components/Home/PlaceItem';
 import { getMapStyle } from 'utils/mapStyle';
 import ModalPlace from 'components/Home/ModalPlace';
 
