@@ -10,6 +10,3 @@ export async function getGuide(id){
     // RETORNAR RESULTADOS
     return guie;
 }
-  
-
-    
