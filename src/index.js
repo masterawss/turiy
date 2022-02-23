@@ -12,6 +12,10 @@ import '@fontsource/nunito/700.css';
 
 import '@fortawesome/react-fontawesome';
 
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { Provider } from 'react-redux'
 import store from 'store/index'
 // const theme = createTheme({
@@ -27,6 +31,7 @@ ReactDOM.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
+    <ToastContainer />
   </Provider>
   ,
   document.getElementById('root')
