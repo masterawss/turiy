@@ -20,12 +20,12 @@ export default function PlaceItem({place}){
                             <div className="my-1">
                                 <div>
                                     <FontAwesomeIcon style={{color: 'orange'}} icon={faStar} />
-                                    <span className="text-muted ml-3">{place.stars} ({place.reviews.length} reviews)</span>
+                                    <span className="text-muted ml-3"> {place.stars} ({place.reviews?.length || 0} reviews)</span>
                                 </div>
                                 <br/>
                                 <div>
                                     <FontAwesomeIcon style={{color: 'gray'}} icon={faUsers} />
-                                    <span className="text-muted ml-3">{place.guides.length} guías</span>
+                                    <span className="text-muted ml-3"> {place.guides?.length || 0} guías</span>
                                 </div>
                             </div>
                             <br/>

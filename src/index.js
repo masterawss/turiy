@@ -30,8 +30,8 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <App />
+      <ToastContainer />
     </BrowserRouter>
-    <ToastContainer />
   </Provider>
   ,
   document.getElementById('root')
