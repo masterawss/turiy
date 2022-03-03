@@ -1,7 +1,7 @@
 import CallToAction from '../../components/LandingPage/CallToAction';
 import Form from '../../components/RegisterGuide/Form.js'
 import FeaturesSection from '../../components/LandingPage/FeaturesSection';
-import '../../assets/style/RegisterGuide/Form.css'
+// import '../../assets/style/RegisterGuide/Form.css'
 import { getGuide } from 'api/GuideApi';
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";

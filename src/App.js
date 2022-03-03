@@ -14,6 +14,9 @@ import Review from "./pages/Place/Review";
 import VisitedPlace from "./pages/Profile/Visited";
 import SavedPlace from "./pages/Profile/Saved";
 import Guide from './pages/Guide/Guide';
+import {PrivateRoute} from "components/Auth/PrivateRoute";
+import { useDispatch } from "react-redux";
+import { fetchUser } from "store/auth/authSlice";
 
 // HOME --------------------------
 // home/
@@ -61,22 +64,35 @@ import Guide from './pages/Guide/Guide';
 
 
 function App() {
+
+  const dispatch = useDispatch()
+  React.useEffect(() => {
+      dispatch(fetchUser())
+      console.log('asdad');
+  }, [dispatch]);
+    
   return (
     <Routes>
       <Route path="/" element={<MainLayout/>}>
         <Route path="" element={<LandingPage/>} />
-        <Route path="home" element={<Home/>} />
-        <Route path="place/:id/" element={<Place/>}>
-          <Route path="publication" element={<Publication/>}/>
-          <Route path="review" element={<Review/>} />
-        </Route>  
-        <Route path="/guide" element={<Guide/>} />
-        <Route path="/profile/visited" element={<VisitedPlace/>} />
-        <Route path="/profile/saved" element={<SavedPlace/>} /> 
-        <Route path="profile/user/:id/show" element={<RegisterGuide/>} />
-        <Route path="profile/guide_register/:id/create" element={<RegistroGuia/>} />
-        <Route path="profile/checkout" element={<Checkout/>} />
-        <Route path="profile/guide_register/:id/create" element={<Preform/>} />
+        <Route path="/*" element={
+          <PrivateRoute>
+            <Routes>
+              <Route path="home" element={<Home/>} />
+              <Route path="place/:id/" element={<Place/>}>
+                <Route path="publication" element={<Publication/>}/>
+                <Route path="review" element={<Review/>} />
+              </Route>  
+              <Route path="/guide" element={<Guide/>} />
+              <Route path="/profile/visited" element={<VisitedPlace/>} />
+              <Route path="/profile/saved" element={<SavedPlace/>} /> 
+              <Route path="profile/user/:id/show" element={<RegisterGuide/>} />
+              <Route path="profile/guide_register/:id/create" element={<RegistroGuia/>} />
+              <Route path="profile/checkout" element={<Checkout/>} />
+              <Route path="profile/guide_register/:id/create" element={<Preform/>} />
+            </Routes>
+          </PrivateRoute>
+        }/>
       </Route>
     </Routes>
   );

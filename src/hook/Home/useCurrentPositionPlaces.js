@@ -12,8 +12,7 @@ export const useCurrentPositionPlaces = ({current_position = {}, zoom=11}) => {
             console.log(places);
             setPlaces(places || [])
         }).catch(e => {
-            console.log(e);
-            toast.error('Ha ocurrido un error')
+            toast.error(e.message)
         })
         .finally(() => {
             setLoading(false)

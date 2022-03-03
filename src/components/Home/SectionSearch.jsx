@@ -7,7 +7,7 @@ export default function SectionSearch(){
         <div className="container">
             <Row className="justify-content-md-center">
                 <Col sm="12" lg="4">
-                    <Card>
+                    <Card >
                         <Card.Body>
                             <div className="text-center mb-2">
                                 <strong>¿Cuál será tu próxima aventura?</strong>
