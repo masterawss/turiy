@@ -1,6 +1,8 @@
+import { Formik } from "formik";
 import React, { useEffect, useState } from "react";
 import { Button, Col, Modal, Row } from "react-bootstrap";
 import bg from '../assets/img/bg-travel-1.png'
+
 export default function LoginModal(){
     const [show, setShow] = useState(false);
   
@@ -25,6 +27,12 @@ export default function LoginModal(){
                         <strong>¡Explora tu alrededor ahora mismo!</strong>
                     </div>
                     <div className="d-grid gap-2 mt-5">
+
+                        <Formik
+                            initialValues={{email: '', password: ''}}>
+
+                        </Formik>
+
                         <Button variant="danger">Iniciar sesión con google</Button>
                         <Button variant="info">Iniciar sesión con facebook</Button>
                     </div>

@@ -6,12 +6,10 @@ import { Link } from "react-router-dom";
 import "../../src/assets/style/Home/style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-const pages = ["Home", "About", "Features", "Pricing", "Gallery", "Team"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const TopBar = () => {
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar bg="white" variant="light">
       <Container>
         <Navbar.Brand>
           <Link to="/">

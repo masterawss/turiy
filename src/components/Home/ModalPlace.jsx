@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Badge, Button, Modal } from "react-bootstrap";
 
 import {
@@ -7,7 +6,6 @@ import {
     selectPlace
 } from 'store/landing/modalLandingSlice'
 import { useDispatch, useSelector } from "react-redux";
-import { getPlace } from "api/PlaceApi";
 import { Link } from "react-router-dom";
 
 export default function ModalPlace (){

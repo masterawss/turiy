@@ -1,5 +1,3 @@
-import { FontAwesomeIcon, } from "@fortawesome/react-fontawesome";
-import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
 import { Card } from "react-bootstrap";
 import {grey} from 'material-ui-colors';
 
