@@ -8,8 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { getUser } from "api/AuthApi";
 import { useSelector } from "react-redux";
-const pages = ["Home", "About", "Features", "Pricing", "Gallery", "Team"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const TopBar = () => {
 
@@ -26,7 +24,7 @@ const TopBar = () => {
   // }, [])
 
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar bg="white" variant="light">
       <Container>
         <Navbar.Brand>
           <Link to="/">
