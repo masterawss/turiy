@@ -15,7 +15,7 @@ const LoginSchema = Yup.object().shape({
     password: Yup.string().min(4).required('La contraseña es requerida')
 })
 
-export default function LoginModal(){
+export const LoginModal = () => {
 
     console.log('MODAL');
 
@@ -37,7 +37,7 @@ export default function LoginModal(){
             </Button>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Body className="p-5">
-                    <MHead/>
+                    <Head/>
                     <div className="d-grid gap-2 mt-3">
                         <Formik
                             initialValues={{email: '', password: ''}}
@@ -70,7 +70,7 @@ export default function LoginModal(){
     )
 }
 
-function Head() {
+const Head = () => {
     console.log('HEAD');
     return (
         <>
@@ -88,4 +88,4 @@ function Head() {
     )
 }
 
-const MHead = React.memo(Head)
+// const MHead = React.memo(Head)

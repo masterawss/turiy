@@ -11,7 +11,7 @@ import { fetchUser } from "store/auth/authSlice";
 import PlaceShow from "./pages/Place/Show";
 import UserShow from "./pages/User/Show";
 import {Profile as AuthProfile} from "./pages/Auth/Profile";
-import {GuideRegister} from "./pages/Auth/GuideRegister";
+import { Success } from "pages/Checkout/Success";
 
 function App() {
 
@@ -33,20 +33,8 @@ function App() {
               <Route path="user/:id" element={<UserShow/>} />
 
               <Route path="profile" element={<AuthProfile/>} />
-              <Route path="register-guide" element={<GuideRegister/>} />
 
-              {/* <Route path="user/">
-                <Route path=":id/" element={<Pages/User/Show/>}>
-                  <Route path="visited" element={<Component/User/VisitedSection/>}></Route>
-                  <Route path="saved" element={<Component/User/SavedSection/>}></Route>
-                </Route>
-              </Route>
-
-              <Route path="profile/">
-                <Route path="configuration" element={<Pages/Profile/Configuration/>} />
-                <Route path="checkout" element={<Pages/Profile/Checkout/>} />
-                <Route path="guide_register" element={<Pages/Profile/GuideRegister/>} />
-              </Route> */}
+              <Route path="checkout-success" element={<Success/>} />
             </Routes>
           </PrivateRoute>
         } />

@@ -14,7 +14,18 @@ export const login = async ({email, password}) => {
 export const getAuthUser = async () => {
     return axiosInstance.get('auth/user')
     .then(res => res.data.user)
-    // .catch(e => {
-        
-    // })
+    .catch(e => {
+        toast.error('Ha ocurrido un error')
+    })
+}
+
+export const sendFormRegisterGuide = async (form) => {
+  return axiosInstance
+    .post('auth/register-guide', {
+        form
+    })
+    .then(res => res.data)
+    .catch(e => {
+      toast.error('Ha ocurrido un error')
+    })
 }

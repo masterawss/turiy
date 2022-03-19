@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Container, Dropdown, Nav, Navbar } from "react-bootstrap";
-import LoginModal from "./LoginModal";
+import {LoginModal} from "components/LoginModal";
 import logo from "../assets/logo.svg";
 import { Link, useNavigate } from "react-router-dom";
 import "../../src/assets/style/Home/style.css"
@@ -52,7 +52,10 @@ const TopBar = () => {
               </Dropdown>
             </>
           )
-          : <LoginModal/>
+          : <>
+            <LoginModal/>
+          </>
+          
         }
 
       </Container>
