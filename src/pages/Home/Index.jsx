@@ -1,12 +1,12 @@
 import '../../assets/style/Home/style.css'
 import GoogleMapReact from 'google-map-react';
-import SectionSearch from "components/Home/SectionSearch";
+import SectionSearch from "pages/Home/components/SectionSearch";
 import { useEffect, useState } from 'react';
 import Marker from 'components/Marker';
 import { getPlaces } from 'api/PlaceApi';
-import PlaceItem from 'components/Home/PlaceItem';
+import PlaceItem from 'pages/Home/components/PlaceItem';
 import { getMapStyle } from 'utils/mapStyle';
-import ModalPlace from 'components/Home/ModalPlace';
+import ModalPlace from 'pages/Home/components/ModalPlace';
 import { useCurrentPositionPlaces } from 'hook/Home/useCurrentPositionPlaces';
 
 export default function Index(props){
@@ -40,7 +40,7 @@ export default function Index(props){
                 }
             </GoogleMapReact>
         </div>
-        <div className="fixed-top mt-5 pt-4">
+        <div className="fixed-top mt-5 pt-4" style={{zIndex: 0}}>
             <SectionSearch></SectionSearch>
         </div>
         <div className="fixed-bottom scroll-x p-4" >

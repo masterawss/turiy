@@ -4,7 +4,10 @@ import { Navigate } from "react-router-dom";
 import {fetchUser} from 'store/auth/authSlice'
 export const PrivateRoute= ({children}) => {
 
-    const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+    // const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+    const isLoggedIn = true;
+
+
     // const dispatch = useDispatch()
     // useEffect(() => {
     //     dispatch(fetchUser())

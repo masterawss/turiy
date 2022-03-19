@@ -1,4 +1,3 @@
-import env from "react-dotenv";
 import {toast} from 'react-toastify'
 import axiosInstance from 'utils/axios'
 export const login = async ({email, password}) => {
@@ -12,7 +11,7 @@ export const login = async ({email, password}) => {
         })
 }
 
-export const getUser = async () => {
+export const getAuthUser = async () => {
     return axiosInstance.get('auth/user')
     .then(res => res.data.user)
     // .catch(e => {

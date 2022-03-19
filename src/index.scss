@@ -26,4 +26,10 @@ body {
 }
 .card{
   border: 0px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 15px -2px rgba(0,0,0,0.29);
+  -webkit-box-shadow: 1px 3px 15px -2px rgba(0,0,0,0.10);
+  -moz-box-shadow: 1px 3px 15px -2px rgba(0,0,0,0.10);
 }
+
+@import url("https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css");
