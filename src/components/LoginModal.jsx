@@ -52,8 +52,8 @@ export const LoginModal = () => {
                             }}>
                             { () => (
                                 <Form>
-                                    <Field name="email"  type="email"  placeholder="Correo electrónico"  label="Ingrese su email"  component={WInput} />
-                                    <Field name="password" type="password" placeholder="Contraseña" label="Ingrese su contraseña" component={WInput} />
+                                    <Field  name="email"  type="email"  placeholder="Correo electrónico"  label="Ingrese su email"  component={WInput} />
+                                    <Field  name="password" type="password" placeholder="Contraseña" label="Ingrese su contraseña" component={WInput} />
 
                                     <div className="d-grid gap-2">
                                         <Button type="submit" variant="primary" >

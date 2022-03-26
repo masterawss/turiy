@@ -15,7 +15,7 @@ export const ImgProfile = (props) => {
 
   return (
     <>
-      <Image {...props} roundedCircle fluid src={imageUrl} alt="Image of user" />                        
+      <Image {...props} roundedCircle fluid src={imageUrl} alt="Image of user" />
     </>
   )
 }

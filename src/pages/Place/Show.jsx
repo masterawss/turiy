@@ -1,9 +1,8 @@
-import { CardMembershipTwoTone } from "@mui/icons-material";
 import { getPlace } from "api/PlaceApi";
 import { InfoCard } from "./components/InfoCard";
 import { useEffect, useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
-import { Outlet, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { SectionGuiasDisponibles } from "./components/SectionGuiasDisponibles";
 import { SectionTab } from "./components/SectionTab";
 
@@ -12,11 +11,11 @@ export default function Show(){
 
     const [place, setPlace] = useState(null);
     useEffect(() => {
-        getPlace(id).then((place) => {
-            console.log(place);
-            setPlace(place);
-        });
-    },[]);
+      getPlace(id).then((place) => {
+        console.log(place);
+        setPlace(place);
+      });
+    },[id]);
     
   return (
     <Container className="py-4"> 

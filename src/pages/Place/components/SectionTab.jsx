@@ -1,7 +1,6 @@
 import { Alert, Tab, Tabs } from "react-bootstrap"
 import {CardPublication} from 'components/CardPublication'
 import {CardReview} from 'components/CardReview'
-import { useParams } from "react-router-dom"
 export const SectionTab = ({place}) => {
   return (
     <>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Badge, Image } from "react-bootstrap";
+import { Badge} from "react-bootstrap";
 import { ImgProfile } from "./ImgProfile";
 export const InfoCard = ({user}) => {
 
