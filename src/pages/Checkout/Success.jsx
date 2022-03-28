@@ -11,7 +11,7 @@ export const Success = () => {
               <h3>Ahora eres un guía oficial en Turiy</h3>
               <p className="my-3">
                 Desde ahora te concedemos el poder de generar de experiencias únicas.
-                Recuerda, un gran poder conlleva una gran responsabilidad ;)
+                Recuerda, un gran poder conlleva una gran responsabilidad ;
               </p>
             </div>
           </Card.Body>

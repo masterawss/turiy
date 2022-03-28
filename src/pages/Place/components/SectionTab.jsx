@@ -29,7 +29,7 @@ export const SectionTab = ({place}) => {
             </Alert>
           }
         </Tab>
-        <Tab eventKey="reseñas" title="Reseñas">
+        {/* <Tab eventKey="reseñas" title="Reseñas">
           {
             place.reviews && place.reviews.map(review => (
               <CardReview review={review}/>
@@ -41,7 +41,7 @@ export const SectionTab = ({place}) => {
               Aún no hay reviews para este sitio. Anímate, sé el primero :)
             </Alert>
           }
-        </Tab>
+        </Tab> */}
       </Tabs>
     </>
   )
