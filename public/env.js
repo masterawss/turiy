@@ -210,7 +210,7 @@ window.env = {
   "npm_package_devDependencies_web_vitals": "^2.1.2",
   "npm_package_eslintConfig_extends_0": "react-app",
   "npm_package_eslintConfig_extends_1": "react-app/jest",
-  "npm_package_gitHead": "90797301a8ab3fc9beb24460764986123af2eb32",
+  "npm_package_gitHead": "01e894554cadf87ba5900b923993b974e0e5889f",
   "npm_package_name": "turiy",
   "npm_package_private": "true",
   "npm_package_readmeFilename": "README.md",
