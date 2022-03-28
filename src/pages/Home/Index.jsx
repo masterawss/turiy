@@ -1,9 +1,8 @@
 import '../../assets/style/Home/style.css'
 import GoogleMapReact from 'google-map-react';
 import SectionSearch from "pages/Home/components/SectionSearch";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Marker from 'components/Marker';
-import { getPlaces } from 'api/PlaceApi';
 import PlaceItem from 'pages/Home/components/PlaceItem';
 import { getMapStyle } from 'utils/mapStyle';
 import ModalPlace from 'pages/Home/components/ModalPlace';
@@ -11,7 +10,7 @@ import { useCurrentPositionPlaces } from 'hook/Home/useCurrentPositionPlaces';
 
 export default function Index(props){
 
-    const [mapData, setMapData] = useState({
+    const [mapData] = useState({
         center: {
             lat: -6.489425,
             lng: -76.376167

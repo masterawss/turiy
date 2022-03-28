@@ -21,7 +21,7 @@ export const SectionTab = ({place}) => {
             place.publications && place.publications.map(publication => (
               <CardPublication publication={publication}/>
             ))
-          }
+          } 
           {
             place.publications || 
             <Alert variant="info">
@@ -29,19 +29,7 @@ export const SectionTab = ({place}) => {
             </Alert>
           }
         </Tab>
-        {/* <Tab eventKey="reseñas" title="Reseñas">
-          {
-            place.reviews && place.reviews.map(review => (
-              <CardReview review={review}/>
-            ))
-          }
-          {
-            place.reviews || 
-            <Alert variant="info">
-              Aún no hay reviews para este sitio. Anímate, sé el primero :)
-            </Alert>
-          }
-        </Tab> */}
+
       </Tabs>
     </>
   )

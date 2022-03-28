@@ -15,7 +15,8 @@ export const getAuthUser = async () => {
     return axiosInstance.get('auth/user')
     .then(res => res.data.user)
     .catch(e => {
-        toast.error('Ha ocurrido un error')
+        localStorage.removeItem('token')
+        // toast.error('Ha ocurrido un error')
     })
 }
 

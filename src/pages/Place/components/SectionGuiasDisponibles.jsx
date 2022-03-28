@@ -1,7 +1,7 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { ImgProfile } from "pages/User/components/ImgProfile"
-import { Alert, Image } from "react-bootstrap"
+import { Alert } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 export const SectionGuiasDisponibles = ({place}) => {

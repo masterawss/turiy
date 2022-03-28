@@ -1,11 +1,10 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
-import {fetchUser} from 'store/auth/authSlice'
 export const PrivateRoute= ({children}) => {
 
-    // const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
-    const isLoggedIn = true;
+    const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+    // const isLoggedIn = true;
+    console.log('LOGGED IN', isLoggedIn);
 
 
     // const dispatch = useDispatch()

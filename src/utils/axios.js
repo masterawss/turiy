@@ -1,8 +1,5 @@
 import axios from "axios";
-import React from "react";
-import env from "react-dotenv";
-import { useDispatch, useSelector } from "react-redux";
-import {logoutAction} from 'store/auth/authSlice'
+import env from '../env.json'
 
 const client = axios.create({
     baseURL:  env.API_URL
