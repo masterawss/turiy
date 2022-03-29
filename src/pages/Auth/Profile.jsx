@@ -1,6 +1,6 @@
 import { getAuthUser } from "api/AuthApi";
 import { useEffect, useState } from "react";
-import { Card, Col, Container, Nav, Row, Tab } from "react-bootstrap"
+import { Card, Col, Container, Nav, Row, Tab,Form,Button } from "react-bootstrap"
 import { TabGuide } from "./components/TabGuide"
 export const Profile = () => {
 
@@ -34,7 +34,44 @@ export const Profile = () => {
                   <Card.Body>
                     <Tab.Content>
                       <Tab.Pane eventKey="first">
-                        asdadad
+                      <Row className="align-items-center mx-5">
+                       <Col>
+                        <Form>
+                         <h4>Informacion de Usuario</h4>
+                         <Form.Group className="mb-3" controlId="formBasicUsuario">
+                            <Form.Label>Usuario</Form.Label>
+                            <Form.Control type="text" placeholder="Nombre de Usuario" value={user.name} disabled />
+                            <Form.Text className="text-muted">
+                               Usuario registrado.
+                            </Form.Text>
+                         </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                           <Form.Label>Correo</Form.Label>
+                           <Form.Control type="text" placeholder="Correo" value={user.correo} disabled />
+                           <Form.Text className="text-muted">
+                            Correo Registrado.
+                           </Form.Text>
+                         </Form.Group>
+                           <div className="d-grid gap-2">
+                            <Button type="submit" variant="primary" >
+                            Editar Cuenta
+                            </Button>
+                          </div>
+                       </Form>
+                       </Col>
+                       <Col>
+                       <div className="text-center">
+                         <img style={{width: '250px'}} src="https://img.freepik.com/vector-gratis/ilustracion-concepto-inicio-sesion_114360-757.jpg?w=740&t=st=1648521396~exp=1648521996~hmac=12467da3b8b0c5c25cbb4cebf5b343c4402c94785b24951bbc8c4fa70595f908" alt="" />
+                         <h5>Genera ingresos enseñando lo maravilloso que es el mundo.</h5>
+
+                          <p className="my-4">
+                           Aplica por tan solo <strong>S/. 40.00</strong> mensuales.
+                          </p>
+                        </div>
+                       </Col>  
+                      </Row>
+
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <TabGuide user={user}></TabGuide>
