@@ -1,8 +1,5 @@
-import GuideImg from 'assets/img/guide.png'
 import { Field, Form, Formik } from 'formik'
-import { useState } from 'react'
 import { Button, Col, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 import * as Yup from 'yup'
 import WInput from "components/Form/Input"
 import {sendFormRegisterGuide} from 'api/AuthApi'

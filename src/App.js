@@ -25,6 +25,7 @@ function App() {
     <Routes>
       <Route path="/" element={<MainLayout/>}>
         <Route path="" element={<LandingPage/>} />
+        <Route path="landing-page/:pageId" element={<LandingPage/>} />
         <Route path="/*" element={
           <PrivateRoute>
             <Routes>
@@ -40,29 +41,6 @@ function App() {
         } />
       </Route>
     </Routes>
-    // <Routes>
-    //   <Route path="/" element={<MainLayout/>}>
-    //     <Route path="" element={<LandingPage/>} />
-    //     <Route path="/*" element={
-    //       <PrivateRoute>
-    //         <Routes>
-    //           <Route path="home" element={<Home/>} />
-    //           <Route path="place/:id/" element={<Place/>}>
-    //             <Route path="publication" element={<Publication/>}/>
-    //             <Route path="review" element={<Review/>} />
-    //           </Route>  
-    //           <Route path="/guide" element={<Guide/>} />
-    //           <Route path="/profile/visited" element={<VisitedPlace/>} />
-    //           <Route path="/profile/saved" element={<SavedPlace/>} /> 
-    //           <Route path="profile/user/:id/show" element={<RegisterGuide/>} />
-    //           <Route path="profile/guide_register/:id/create" element={<RegistroGuia/>} />
-    //           <Route path="profile/checkout" element={<Checkout/>} />
-    //           <Route path="profile/guide_register/:id/create" element={<Preform/>} />
-    //         </Routes>
-    //       </PrivateRoute>
-    //     }/>
-    //   </Route>
-    // </Routes>
   );
 }
 

@@ -9,7 +9,7 @@ export const slice = createSlice({
     name: 'auth',
     initialState: {
         user: {},
-        isLoggedIn: false,
+        isLoggedIn: !!localStorage.getItem('token'),
     },
     reducers: {
         setUser: (state, action) => {
@@ -24,9 +24,8 @@ export const slice = createSlice({
     },
     extraReducers: (builder) => {
         builder.addCase(fetchUser.fulfilled, (state, action) => {
-            console.log('LOGGEDIN 1');
+            // console.log('LOGGEDIN 1');
             if(action.payload?.id){
-                console.log('LOGGEDIN');
                 state.user = action.payload
                 state.isLoggedIn = true
             }

@@ -1,5 +1,5 @@
 import { getNearbyPlaces } from "api/HomeApi";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import {toast} from 'react-toastify'
 export const useCurrentPositionPlaces = ({current_position = {}, zoom=11}) => {
 
