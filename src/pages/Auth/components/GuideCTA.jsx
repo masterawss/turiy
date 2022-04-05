@@ -43,6 +43,12 @@ export const GuideCTA = () => {
                   label="Descripción"
                   component={WInput} />
 
+                 <Field
+                  name="email"
+                  placeholder="Correo de Pago"
+                  label="Correo de Afiliacion"
+                  component={WInput} />
+
                 <div className="d-grid gap-2">
                   <Button type="submit" variant="primary" >
                     ¡Vamos!
