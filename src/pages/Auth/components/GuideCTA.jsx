@@ -1,15 +1,31 @@
+import { getAuthUser } from "api/AuthApi";
+import { useEffect, useState } from "react";
 import { Field, Form, Formik } from 'formik'
 import { Button, Col, Row } from 'react-bootstrap'
 import * as Yup from 'yup'
 import WInput from "components/Form/Input"
 import {sendFormRegisterGuide} from 'api/AuthApi'
 
+
 const GuideFormSchema = () => Yup.object().shape({
   doc: Yup.mixed().required('El documento es requerido'),
   descripcion: Yup.string().required('Ingrese una descripción')
 })
 
+
 export const GuideCTA = () => {
+
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    getAuthUser().then((user) => {
+      console.log('USER', user);
+      setUser(user);
+    });
+  },[]);
+
+  console.log("body d"+JSON.stringify(user));
+
+  const envio_correo=user.email;
 
   const handleSubmit = (formik) => {
     sendFormRegisterGuide(formik)
@@ -47,7 +63,8 @@ export const GuideCTA = () => {
                   name="email"
                   placeholder="Correo de Pago"
                   label="Correo de Afiliacion"
-                  component={WInput} />
+                  value={envio_correo}
+                  component={WInput} disabled/>
 
                 <div className="d-grid gap-2">
                   <Button type="submit" variant="primary" >
