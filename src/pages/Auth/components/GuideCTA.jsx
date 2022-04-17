@@ -25,7 +25,7 @@ export const GuideCTA = () => {
 
   console.log("body d"+JSON.stringify(user));
 
-  const envio_correo=user.email;
+  const envio_correo="test";
 
   const handleSubmit = (formik) => {
     sendFormRegisterGuide(formik)
@@ -63,7 +63,7 @@ export const GuideCTA = () => {
                   name="email"
                   placeholder="Correo de Pago"
                   label="Correo de Afiliacion"
-                  value={envio_correo}
+                  defaultValue={envio_correo}
                   component={WInput} disabled/>
 
                 <div className="d-grid gap-2">

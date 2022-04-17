@@ -40,7 +40,7 @@ export const Profile = () => {
                          <h4>Informacion de Usuario</h4>
                          <Form.Group className="mb-3" controlId="formBasicUsuario">
                             <Form.Label>Usuario</Form.Label>
-                            <Form.Control type="text" placeholder="Nombre de Usuario" value={user.name} disabled />
+                            <Form.Control type="text" placeholder="Nombre de Usuario" defaultValue={user.name}  />
                             <Form.Text className="text-muted">
                                Usuario registrado.
                             </Form.Text>
@@ -48,7 +48,7 @@ export const Profile = () => {
 
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                            <Form.Label>Correo</Form.Label>
-                           <Form.Control type="text" placeholder="Correo" value={user.email} disabled />
+                           <Form.Control type="text" placeholder="Correo" defaultValue={user.email} disabled />
                            <Form.Text className="text-muted">
                             Correo Registrado.
                            </Form.Text>
