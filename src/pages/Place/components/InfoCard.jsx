@@ -8,7 +8,10 @@ export const InfoCard = ({place}) => {
         <Card.Body>
           <Row>
             <Col xs={6}>
-              <Card.Img style={{height: '350px', borderRadius: '20px', objectFit: 'cover'}} variant="top" src={place.images[0]} />
+              {
+                !!place.images &&
+                <Card.Img style={{height: '350px', borderRadius: '20px', objectFit: 'cover'}} variant="top" src={place.images[0]} /> 
+              }
             </Col>
             <Col xs={6}>
               <Card.Body>

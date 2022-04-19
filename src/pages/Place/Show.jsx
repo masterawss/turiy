@@ -11,7 +11,7 @@ export default function Show(){
 
     const [place, setPlace] = useState(null);
     useEffect(() => {
-      getPlace(id).then((place) => {
+      getPlace(id).then(({place, publications}) => {
         console.log(place);
         setPlace(place);
       });

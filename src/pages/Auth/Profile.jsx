@@ -69,7 +69,7 @@ export const Profile = () => {
                            Aplica por tan solo <strong>S/. 40.00</strong> mensuales.
                           </p>
                         </div>
-                       </Col>  
+                       </Col>
                       </Row>
 
                       </Tab.Pane>
