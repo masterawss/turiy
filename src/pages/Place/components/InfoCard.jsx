@@ -7,17 +7,17 @@ export const InfoCard = ({place}) => {
       <Card>
         <Card.Body>
           <Row>
-            <Col xs={6}>
+            <Col md={6}>
               {
                 !!place.images &&
                 <Card.Img style={{height: '350px', borderRadius: '20px', objectFit: 'cover'}} variant="top" src={place.images[0]} /> 
               }
             </Col>
-            <Col xs={6}>
+            <Col md={6}>
               <Card.Body>
                 <Stack className="mb-3" direction="horizontal" gap={3}>
                   <Card.Title>{place.title}</Card.Title>
-                  <Button className="ms-auto" variant="success">Registrar como visitado</Button>
+                  <Button className="ms-auto" variant="success">Ya lo visité 😁</Button>
                   <Button variant="info">Guardar</Button>
                 </Stack>
                 <Card.Text>

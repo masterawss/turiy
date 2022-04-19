@@ -24,15 +24,15 @@ export default function Show(){
         ? (
           <>
             <InfoCard place={place} />
-            <Row className="mt-4">
-              <Col xs={9}>
+            <Row >
+              <Col className="mt-4" lg={9} md={12}>
                 <Card>
                   <Card.Body>
                     <SectionTab place={place}/>
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className="mt-4">
                 <Card>
                   <Card.Body>
                     <SectionGuiasDisponibles place={place}/>
