@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Badge, Button, Card, Col, Modal, Row, Stack } from "react-bootstrap";
+import { RegisterVisitForm } from "./RegisterVisitForm";
 export const InfoCard = ({place}) => {
 
   const [isVisitado, setIsVisitado] = useState(false)
@@ -47,7 +48,22 @@ export const InfoCard = ({place}) => {
         </Card.Body>
       </Card>
 
-
+      <Modal show={showModalVisit} onHide={() => setShowModalVisit(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Registrar visita</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <RegisterVisitForm/>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModalVisit(false)}>
+            Cerrar
+          </Button>
+          <Button variant="primary" onClick={() => setShowModalVisit(false)}>
+            Guardar
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
       
     </>
