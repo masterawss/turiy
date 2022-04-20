@@ -12,10 +12,12 @@ export default function Show(){
   const {id} = useParams()
 
   const [user, setUser] = useState(null);
+  const [reviews, setReviews] = useState(null);
   useEffect(() => {
-    getUser(id).then((user) => {
+    getUser(id).then(({user, reviews}) => {
       console.log(user);
       setUser(user);
+      setReviews(reviews);
     });
   },[]);
 
@@ -35,7 +37,7 @@ export default function Show(){
             <Col sm={6} lg={9}>
               <Card>
                 <Card.Body>
-                  <SectionTab user={user} />
+                  <SectionTab user={user} reviews={reviews} />
                 </Card.Body>
               </Card>
                 {/* <SecondNav link1="Tours" link2="Reseña"/>

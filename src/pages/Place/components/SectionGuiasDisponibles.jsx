@@ -14,12 +14,12 @@ export const SectionGuiasDisponibles = ({place}) => {
           <Link style={{color: 'inherit', textDecoration: 'inherit'}} to={'/user/'+guide.id} key={guide.id}>
             <div className="d-flex justify-content-between align-items-start">
               <div>
-                <ImgProfile  style={{width: "35px"}} user={guide}></ImgProfile>
+                <ImgProfile  style={{width: "55px"}} user={guide}></ImgProfile>
               </div>
               <div className="ms-2 me-auto">
                 <div className="fw-bold">{guide.name}</div>
                 <div>
-                  <FontAwesomeIcon icon={faStar} /> {guide.stars}
+                  <FontAwesomeIcon icon={faStar} /> {guide.stars || '-'}
                 </div>
               </div>
             </div>
@@ -27,10 +27,10 @@ export const SectionGuiasDisponibles = ({place}) => {
         ))
       }
       {
-        !!place.guides || 
+        (!place.guides || place.guides.length === 0) && 
         <>
           <Alert variant="secondary">
-            No hay guías para este sitio :(
+            Aún hay guías para este sitio 😕
           </Alert>
         </>
       }

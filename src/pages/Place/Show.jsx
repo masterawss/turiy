@@ -21,7 +21,7 @@ export default function Show(){
     <Container className="py-4"> 
       {
         place
-        ? (
+        ?
           <>
             <InfoCard place={place} />
             <Row >
@@ -41,7 +41,6 @@ export default function Show(){
               </Col>
             </Row>
           </>
-        )
         : <strong>Cargando</strong>
       }
       

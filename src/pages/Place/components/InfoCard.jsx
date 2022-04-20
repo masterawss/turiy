@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Badge, Button, Card, Col, Row, Stack } from "react-bootstrap";
 
 export const InfoCard = ({place}) => {
+
+  const [isVisitado, setIsVisitado] = useState(false)
+
   return (
     <>
       <Card>
@@ -17,8 +20,13 @@ export const InfoCard = ({place}) => {
               <Card.Body>
                 <Stack className="mb-3" direction="horizontal" gap={3}>
                   <Card.Title>{place.title}</Card.Title>
-                  <Button className="ms-auto" variant="success">Ya lo visité 😁</Button>
-                  <Button variant="info">Guardar</Button>
+                  {
+                    isVisitado ?
+                      <Badge bg="success" className="ms-auto p-2">Visitado 😄</Badge>
+                    :
+                    <Button className="ms-auto mr-2" variant="success">Registrar visita</Button>
+                  }
+
                 </Stack>
                 <Card.Text>
                   {place.description}
@@ -28,6 +36,10 @@ export const InfoCard = ({place}) => {
                     {category}
                   </Badge>
                 )}
+                {/* <div className="mt-4">
+                  <Button className="ms-auto mr-2" variant="success">Ya lo visité 😁</Button>
+                  <Button variant="info">Guardar</Button>
+                </div> */}
               </Card.Body>
             </Col>
           </Row>
