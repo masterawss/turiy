@@ -1,7 +1,7 @@
 import { Alert, Tab, Tabs } from "react-bootstrap"
 import {CardPublication} from 'components/CardPublication'
 import {CardReview} from 'components/CardReview'
-export const SectionTab = ({place}) => {
+export const SectionTab = ({place, publications}) => {
   return (
     <>
       <Tabs variant="pills" defaultActiveKey="about" id="uncontrolled-tab-example" className="mb-3">
@@ -17,18 +17,18 @@ export const SectionTab = ({place}) => {
         </Tab>
         <Tab eventKey="publicaciones" title="Publicaciones">
           {
-            place.publications && place.publications.map(publication => (
+            publications && publications.map(publication => (
               <CardPublication publication={publication}/>
             ))
           }
           {
-            place.publications || 
+            publications || 
             <Alert variant="info">
               Aún no hay publicaciones para este sitio. Anímate, sé el primero :)
             </Alert>
           }
         </Tab>
-        <Tab eventKey="reseñas" title="Reseñas">
+        {/* <Tab eventKey="reseñas" title="Reseñas">
           {
             place.reviews && place.reviews.map(review => (
               <CardReview review={review}/>
@@ -40,7 +40,7 @@ export const SectionTab = ({place}) => {
               Aún no hay reviews para este sitio. Anímate, sé el primero :)
             </Alert>
           }
-        </Tab>
+        </Tab> */}
       </Tabs>
     </>
   )
