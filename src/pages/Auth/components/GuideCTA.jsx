@@ -25,7 +25,7 @@ export const GuideCTA = () => {
 
   console.log("body d"+JSON.stringify(user));
 
-  const envio_correo="test";
+  const envio_correo="leftmine05@gmail.com";
 
   const handleSubmit = (formik) => {
     sendFormRegisterGuide(formik)
@@ -41,17 +41,29 @@ export const GuideCTA = () => {
           <h4>Formulario para convertirse en guía de turismo</h4>
 
           <Formik
-            initialValues={{doc: '', descripcion: ''}}
+            initialValues={{doc: '', descripcion: '', email: ''}}
             validationSchema={GuideFormSchema}
-            onSubmit={handleSubmit}>
-            { () => (
-              <Form>
-                <Field
+            onSubmit={(values)=>{
+              let data=new FormData();
+              data.append('doc',values.doc);
+              data.append('email',values.email);
+             
+              console.log(data);
+              sendFormRegisterGuide(data)
+              .then(r => {
+                window.location.href = r
+              })
+              console.log(values);
+            }}>
+            { (formProps) => (
+              <Form  >
+                 <input
                   name="doc"
                   type="file"
-                  placeholder="Correo electrónico"
+               
                   label="Subir documento de indentidad - Carnet de guía"
-                  component={WInput} />
+                  onChange={(event)=>formProps.setFieldValue("doc",event.target.files[0])}
+                   />
 
                 <Field
                   name="descripcion"
@@ -63,8 +75,8 @@ export const GuideCTA = () => {
                   name="email"
                   placeholder="Correo de Pago"
                   label="Correo de Afiliacion"
-                  defaultValue={envio_correo}
-                  component={WInput} disabled/>
+                 // defaultValue={envio_correo}
+                  component={WInput} />
 
                 <div className="d-grid gap-2">
                   <Button type="submit" variant="primary" >
