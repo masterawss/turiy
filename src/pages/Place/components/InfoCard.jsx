@@ -55,17 +55,7 @@ export const InfoCard = ({place}) => {
         <Modal.Body>
           <RegisterVisitForm/>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModalVisit(false)}>
-            Cerrar
-          </Button>
-          <Button variant="primary" onClick={() => setShowModalVisit(false)}>
-            Guardar
-          </Button>
-        </Modal.Footer>
       </Modal>
-
-      
     </>
   );
 };
