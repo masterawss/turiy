@@ -10,10 +10,12 @@ export default function Show(){
     const { id } = useParams();
 
     const [place, setPlace] = useState(null);
+    const [publications, setPublications] = useState(null);
     useEffect(() => {
-      getPlace(id).then(({place, publications}) => {
+      getPlace(id).then(({place, pubs}) => {
         console.log(place);
         setPlace(place);
+        setPublications(pubs);
       });
     },[id]);
     
@@ -28,7 +30,7 @@ export default function Show(){
               <Col className="mt-4" lg={9} md={12}>
                 <Card>
                   <Card.Body>
-                    <SectionTab place={place}/>
+                    <SectionTab publications={publications} place={place}/>
                   </Card.Body>
                 </Card>
               </Col>
@@ -43,7 +45,6 @@ export default function Show(){
           </>
         : <strong>Cargando</strong>
       }
-      
     </Container>
   );
 };

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Badge, Button, Card, Col, Row, Stack } from "react-bootstrap";
-
+import { Badge, Button, Card, Col, Modal, Row, Stack } from "react-bootstrap";
 export const InfoCard = ({place}) => {
 
   const [isVisitado, setIsVisitado] = useState(false)
+
+  const [showModalVisit, setShowModalVisit] = useState(false)
 
   return (
     <>
@@ -24,7 +25,7 @@ export const InfoCard = ({place}) => {
                     isVisitado ?
                       <Badge bg="success" className="ms-auto p-2">Visitado 😄</Badge>
                     :
-                    <Button className="ms-auto mr-2" variant="success">Registrar visita</Button>
+                    <Button onClick={() => setShowModalVisit(true)} className="ms-auto mr-2" variant="success">Registrar visita</Button>
                   }
 
                 </Stack>
@@ -45,6 +46,10 @@ export const InfoCard = ({place}) => {
           </Row>
         </Card.Body>
       </Card>
+
+
+
+      
     </>
   );
 };
