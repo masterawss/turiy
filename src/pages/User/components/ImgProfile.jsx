@@ -8,7 +8,7 @@ export const ImgProfile = (props) => {
   const [imageUrl, setImageUrl] = useState('https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png')
 
   useEffect(() => {
-    if(!!user.images){
+    if(user.images && user.images[0]){
       setImageUrl(user.images?.[0] )
     }
   }, []);

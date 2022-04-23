@@ -11,7 +11,7 @@ const registerFormSchema = {
   // stars: Yup.number().required('Ingrese una ')
 }
 
-export const RegisterVisitForm = () => {
+export const RegisterVisitForm = ({idPlace}) => {
   const [rating,setRating] = useState(5);
   const handleSubmit = async () => {
     // const res = await login({email: values.email, password: values.password})

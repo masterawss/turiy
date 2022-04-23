@@ -39,9 +39,9 @@ export default function Index(props){
                 }
             </GoogleMapReact>
         </div>
-        <div className="fixed-top mt-5 pt-4" style={{zIndex: 0}}>
+        {/* <div className="fixed-top mt-5 pt-4" style={{zIndex: 0}}>
             <SectionSearch></SectionSearch>
-        </div>
+        </div> */}
         <div className="fixed-bottom scroll-x p-4" >
             {loading
                 ? <strong>Cargando</strong>
