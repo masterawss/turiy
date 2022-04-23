@@ -3,6 +3,8 @@ import { Field, Form, Formik } from "formik";
 import { Button } from "react-bootstrap";
 import WInput from '../../../components/Form/Input';
 import * as Yup from 'yup'
+import { useState } from "react";
+import { Rating } from 'react-simple-star-rating'
 
 const registerFormSchema = {
   description: Yup.string().required('Ingrese una descripción interesante sobre el lugar'),
@@ -10,7 +12,7 @@ const registerFormSchema = {
 }
 
 export const RegisterVisitForm = () => {
-
+  const [rating,setRating] = useState(5);
   const handleSubmit = async () => {
     // const res = await login({email: values.email, password: values.password})
     // if(res === 'ok'){
@@ -20,6 +22,10 @@ export const RegisterVisitForm = () => {
     // }
   }
 
+  const handleRating = (rating) => {
+    setRating(rating)
+  }
+
   return (
     <Formik
         initialValues={{description: '', star: 0, image: ''}}
@@ -27,9 +33,8 @@ export const RegisterVisitForm = () => {
         onSubmit={handleSubmit}>
         { () => (
             <Form>
-                <Field  name="email"  type="email"  placeholder="Correo electrónico"  label="Ingrese su email"  component={WInput} />
-                <Field  name="password" type="password" placeholder="Contraseña" label="Ingrese su contraseña" component={WInput} />
-
+                <Field name="description"  type="text"  placeholder="Ingrese una descripción interesante sobre el lugar"  label="Descripción"  component={WInput} />
+                <Rating onClick={handleRating} ratingValue={rating} /* Available Props */ />
                 <div className="d-grid gap-2">
                     <Button type="submit" variant="primary" >
                         Ingresar
