@@ -49,9 +49,12 @@ export const Profile = () => {
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                            <Form.Label>Correo</Form.Label>
                            <Form.Control type="text" placeholder="Correo" defaultValue={user.email} disabled />
-                           <Form.Text className="text-muted">
-                            Correo Registrado.
-                           </Form.Text>
+                        
+                         </Form.Group>
+                         <Form.Group className="mb-3" controlId="formBasicEmail">
+                           <Form.Label>Tipo Usuario</Form.Label>
+                           <Form.Control type="text" placeholder="Correo" defaultValue={user.type} disabled />
+                           
                          </Form.Group>
                            <div className="d-grid gap-2">
                             <Button type="submit" variant="primary" >
