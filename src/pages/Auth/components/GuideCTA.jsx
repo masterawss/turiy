@@ -1,6 +1,7 @@
 import { getAuthUser } from "api/AuthApi";
 import { useEffect, useState } from "react";
 import { Field, Form, Formik } from 'formik'
+import Axios from 'axios'
 import { Button, Col, Row } from 'react-bootstrap'
 import * as Yup from 'yup'
 import WInput from "components/Form/Input"
@@ -8,26 +9,43 @@ import {sendFormRegisterGuide} from 'api/AuthApi'
 
 
 const GuideFormSchema = () => Yup.object().shape({
-  doc: Yup.mixed().required('El documento es requerido'),
-  descripcion: Yup.string().required('Ingrese una descripción')
+
+  descripcion: Yup.string().required('Ingrese una descripción'),
+  email: Yup.string().required('Ingrese una descripción')
 })
 
 
 export const GuideCTA = () => {
+  
+
+  const [imageSelected, setImageSelected] = useState("");
+  const uploadImage=()=>{
+    const fomData=new FormData();
+    fomData.append("file",imageSelected);
+    fomData.append("upload_preset","qngviyaq");
+
+    Axios.post("https://api.cloudinary.com/v1_1/vittest/image/upload",fomData).then((response)=>{
+     console.log(response);
+    });
+
+  }
+
 
   const [user, setUser] = useState(null);
   useEffect(() => {
     getAuthUser().then((user) => {
       console.log('USER', user);
+     
       setUser(user);
     });
   },[]);
 
-  console.log("body d"+JSON.stringify(user));
-
-  const envio_correo="leftmine05@gmail.com";
+ 
+  
 
   const handleSubmit = (formik) => {
+    console.log(formik);
+    uploadImage();
     sendFormRegisterGuide(formik)
       .then(r => {
         window.location.href = r
@@ -41,28 +59,17 @@ export const GuideCTA = () => {
           <h4>Formulario para convertirse en guía de turismo</h4>
 
           <Formik
-            initialValues={{doc: '', descripcion: '', email: ''}}
+            initialValues={{email:"det", descripcion: ''}}
             validationSchema={GuideFormSchema}
-            onSubmit={(values)=>{
-              let data=new FormData();
-              data.append('doc',values.doc);
-              data.append('email',values.email);
-             
-              console.log(data);
-              sendFormRegisterGuide(data)
-              .then(r => {
-                window.location.href = r
-              })
-              console.log(values);
-            }}>
+            onSubmit={(handleSubmit)}>
             { (formProps) => (
               <Form  >
-                 <input
-                  name="doc"
+                <input
+              
                   type="file"
-               
+                  placeholder="Correo electrónico"
                   label="Subir documento de indentidad - Carnet de guía"
-                  onChange={(event)=>formProps.setFieldValue("doc",event.target.files[0])}
+                  onChange={(event)=>setImageSelected(event.target.files[0])}
                    />
 
                 <Field
@@ -75,7 +82,7 @@ export const GuideCTA = () => {
                   name="email"
                   placeholder="Correo de Pago"
                   label="Correo de Afiliacion"
-                 // defaultValue={envio_correo}
+                  
                   component={WInput} />
 
                 <div className="d-grid gap-2">

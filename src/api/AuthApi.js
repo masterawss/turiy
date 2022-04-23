@@ -20,11 +20,9 @@ export const getAuthUser = async () => {
     })
 }
 
-export const sendFormRegisterGuide = async (form) => {
+export const sendFormRegisterGuide = async (formData) => {
   return axiosInstance
-    .post('auth/register-guide', {
-        form
-    })
+    .post('auth/register-guide',formData)
     .then(res => res.data)
     .catch(e => {
       toast.error('Ha ocurrido un error')
