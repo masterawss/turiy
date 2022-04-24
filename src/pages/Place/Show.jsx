@@ -5,6 +5,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { SectionGuiasDisponibles } from "./components/SectionGuiasDisponibles";
 import { SectionTab } from "./components/SectionTab";
+import { LoaderCircle } from "components/LoaderCircle";
 
 export default function Show(){
     const { id } = useParams();
@@ -45,7 +46,12 @@ export default function Show(){
               </Col>
             </Row>
           </>
-        : <strong>Cargando</strong>
+        : (
+          <div className="row justify-content-center">
+            <LoaderCircle/>
+          </div>
+        )
+
       }
     </Container>
   );

@@ -7,6 +7,8 @@ import PlaceItem from 'pages/Home/components/PlaceItem';
 import { getMapStyle } from 'utils/mapStyle';
 import ModalPlace from 'pages/Home/components/ModalPlace';
 import { useCurrentPositionPlaces } from 'hook/Home/useCurrentPositionPlaces';
+import { Loader } from 'components/Loader';
+import { LoaderCircle } from 'components/LoaderCircle';
 
 export default function Index(props){
 
@@ -29,7 +31,9 @@ export default function Index(props){
                 defaultZoom={mapData.zoom}
                 options={{ styles: getMapStyle() }}
             >
-                { loading || places.map((place) => 
+                { loading 
+                    ? <LoaderCircle/>
+                    : places.map((place) => 
                         <Marker
                             place={place}
                             key={place.id}
@@ -43,8 +47,11 @@ export default function Index(props){
             <SectionSearch></SectionSearch>
         </div> */}
         <div className="fixed-bottom scroll-x p-4" >
-            {loading
-                ? <strong>Cargando</strong>
+            { loading
+                ? 
+                <>
+                    <Loader/>
+                </>
                 : places.map((place, i) => 
                     <div key={place.id} style={{marginRight: '10px'}}>
                         <PlaceItem place={place}></PlaceItem>

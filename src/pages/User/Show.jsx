@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import {getUser} from 'api/UserApi'
 import { InfoCard } from "./components/InfoCard";
+import { LoaderCircle } from 'components/LoaderCircle';
 export default function Show(){
   const {id} = useParams()
 
@@ -46,7 +47,11 @@ export default function Show(){
             </Col>
           </Row>
         }
-        { !!user || <strong>Cargando</strong> }
+        { !!user || 
+          <div className="row justify-content-center">
+            <LoaderCircle/>
+          </div> 
+        }
       </Container>
     </>
   );
