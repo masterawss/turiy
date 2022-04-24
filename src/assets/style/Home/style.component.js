@@ -6,7 +6,7 @@ export const ImageMarker = styled.img`
     height: 60px;
     margin-left: -30px;
     margin-top: -30px;
-    filter: ${props => props.isVisited ? 'grayscale(1)' : 'grayscal(0)'};
+    filter: ${props => props.isVisited ? 'grayscale(0)' : 'grayscale(1)'};
     cursor: pointer;
     
     transition: all 0.2s ease-in-out;

@@ -29,8 +29,8 @@ export default function PlaceItem({place}){
                                 </div>
                             </div>
                             <br/>
-                            {place.categories.map(category => 
-                                <Badge key="category" pill bg="primary">
+                            {place.categories.map((category) => 
+                                <Badge key={category} pill bg="primary">
                                     {category}
                                 </Badge>    
                             )}
