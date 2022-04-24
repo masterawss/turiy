@@ -59,7 +59,7 @@ export const GuideCTA = () => {
           <h4>Formulario para convertirse en guía de turismo</h4>
 
           <Formik
-            initialValues={{email:"det", descripcion: ''}}
+            initialValues={{email:"", descripcion: ''}}
             validationSchema={GuideFormSchema}
             onSubmit={(handleSubmit)}>
             { (formProps) => (

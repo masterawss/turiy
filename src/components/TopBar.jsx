@@ -44,7 +44,7 @@ const TopBar = () => {
 
                 <Dropdown.Menu>
                   <Dropdown.Item >
-                    <Link to="/profile">Perfil</Link>
+                    <Link to="/profile" style={{ textDecoration: 'none', color: 'black' }}>Perfil</Link>
                   </Dropdown.Item>
                   <Dropdown.Item href="#/action-1">Configuración</Dropdown.Item>
                   <Dropdown.Item onClick={logout}>Cerrar sesión</Dropdown.Item>
