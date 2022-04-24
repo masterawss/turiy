@@ -1,11 +1,17 @@
+import { RegisterReseñaForm } from "pages/User/components/RegisterReseñaForm";
 import React, { useState } from "react";
 import { Badge, Button, Card, Col, Modal, Row, Stack } from "react-bootstrap";
 import { RegisterVisitForm } from "./RegisterVisitForm";
-export const InfoCard = ({place}) => {
+export const InfoCard = ({place, isAlreadyVisited: isVisitado}) => {
 
-  const [isVisitado, setIsVisitado] = useState(false)
 
   const [showModalVisit, setShowModalVisit] = useState(false)
+
+  const handleCreatedSuccessfully = () => {
+    setTimeout(() => {
+      window.location.reload(true);
+    }, 500);
+  }
 
   return (
     <>
@@ -24,7 +30,7 @@ export const InfoCard = ({place}) => {
                   <Card.Title>{place.title}</Card.Title>
                   {
                     isVisitado ?
-                      <Badge bg="success" className="ms-auto p-2">Visitado 😄</Badge>
+                      <h4 className="ms-auto"><Badge bg="success" className=" p-2">Visitado 😄</Badge></h4>
                     :
                     <Button onClick={() => setShowModalVisit(true)} className="ms-auto mr-2" variant="success">Registrar visita</Button>
                   }
@@ -53,7 +59,9 @@ export const InfoCard = ({place}) => {
           <Modal.Title>Registrar visita</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <RegisterVisitForm/>
+          {/* <RegisterVisitForm/> */}
+          {/* <RegisterReseñaForm type="place"/> */}
+          <RegisterReseñaForm createdSuccessfully={handleCreatedSuccessfully} idPlace={place.id}/>
         </Modal.Body>
       </Modal>
     </>

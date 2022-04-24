@@ -10,12 +10,14 @@ export default function Show(){
     const { id } = useParams();
 
     const [place, setPlace] = useState(null);
-    const [publications, setPublications] = useState(null);
+    const [reviews, setReviews] = useState(null);
+    const [isAlreadyVisited, setIsAlreadyVisited] = useState(false);
     useEffect(() => {
-      getPlace(id).then(({place, pubs}) => {
-        console.log(place);
+      getPlace(id).then(({place, reviews, isAlreadyVisited: isVisited}) => {
+        // console.log('REVIEWS',reviews);
         setPlace(place);
-        setPublications(pubs);
+        setReviews(reviews);
+        setIsAlreadyVisited(isVisited)
       });
     },[id]);
     
@@ -25,12 +27,12 @@ export default function Show(){
         place
         ?
           <>
-            <InfoCard place={place} />
+            <InfoCard place={place} isAlreadyVisited={isAlreadyVisited} />
             <Row >
               <Col className="mt-4" lg={9} md={12}>
                 <Card>
                   <Card.Body>
-                    <SectionTab publications={publications} place={place}/>
+                    <SectionTab reviews={reviews} place={place}/>
                   </Card.Body>
                 </Card>
               </Col>

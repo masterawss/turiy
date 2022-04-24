@@ -6,10 +6,10 @@ import * as Yup from 'yup'
 import { useState } from "react";
 import { Rating } from 'react-simple-star-rating'
 
-const registerFormSchema = {
-  description: Yup.string().required('Ingrese una descripción interesante sobre el lugar'),
-  // stars: Yup.number().required('Ingrese una ')
-}
+const registerFormSchema = Yup.object().shape({
+    review: Yup.string().required('Ingrese una descripción interesante sobre el lugar'),
+    // stars: Yup.number().required('Ingrese una calificación correcta')
+})
 
 export const RegisterVisitForm = ({idPlace}) => {
   const [rating,setRating] = useState(5);

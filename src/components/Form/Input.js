@@ -13,7 +13,7 @@ export default function WInput({
                 <Form.Label>{label}</Form.Label>
                 <Form.Control {...field} {...props} />
                 {errors[field.name] && touched[field.name] && (
-                    <Form.Text className="text-muted">
+                    <Form.Text className="text-danger">
                         {errors[field.name]}
                     </Form.Text>
                 )}
